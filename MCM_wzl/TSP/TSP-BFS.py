@@ -1,6 +1,6 @@
 import copy
 class SQueue():
-	def __init__(self, init_len=8):
+	def __init__(self, init_len=16):
 		self._len = init_len 
 		self._elems = [0]*init_len
 		self._head = 0
@@ -54,7 +54,7 @@ def get_up(graph,used):
 			if (graph[temp][i] < minlen) and used[i] :
 				minlen = graph[temp][i]
 				pos = i
-		print used,temp,pos,minlen
+		# print used,temp,pos,minlen
 		summ += minlen
 	return summ + graph[pos][0]
 
@@ -64,18 +64,18 @@ def solver(graph, pos, uplim, downlim):
 	qu.enqueue([0])
 	while not qu.is_empty():
 		pos = qu.dequeue()
-		print pos
+		# print pos
 		for i in range(len(graph)):
 			if not i in pos:
 				nextp = pos + [i]
 				val = value(graph,nextp)
-				print nextp,val
+				# print nextp,val
 			if len(nextp) == len(graph) :
-				print 'binggo',val
+				print 'binggo', nextp, val
 				return
 			if val<=uplim and val>=downlim :
 				qu.enqueue(nextp)
-				print 'a sign'
+				# print 'a sign'
 	print("No path.")
 	return 
 	
