@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html><head>
+    <title>全文阅读--XML全文阅读--中国知网</title>
+    <link rel="icon" href="http://kns.cnki.net/kxreader/favicon.ico">
+    <link rel="shortcut Icon" href="http://kns.cnki.net/kxreader/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="文献 XML KBASE CNKI 中国知网">
+    <meta name="description" content="XML文献检索">
+
+    <script type="text/javascript">
+        var APPPATH = '/kxreader';
+    </script>
+<link href="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/TopLogin.css" rel="stylesheet"></head>
+
+<body>
+
+    
+    <input id="hid_uid" name="hid_uid" value="WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" type="hidden">
+    <input id="hid_kLogin_headerUrl" name="hid_kLogin_headerUrl" value="http%3A//kns.cnki.net/KLogin/Request/GetKHeader.ashx%3Fcallback%3D%3F" type="hidden">
+    <input id="hid_kLogin_footerUrl" name="hid_kLogin_footerUrl" value="http%3A//kns.cnki.net/KLogin/Request/GetKFooter.ashx%3Fcallback%3D%3F" type="hidden">
+    <script type="text/javascript" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/get.txt"></script><script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/jquery-1.js"></script><script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/jquery.js"></script><script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/jquery_002.js"></script><script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/json2-min.js"></script><script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/topLogin.js"></script> <div class="ecp_top-nav"> <div class="ecp_tn-header"> <div class="ecp_tn-nav">  <div class="ecp_tn-title">    <a id="Ecp_header_Mobile" class="ecp_tn-tab" target="_blank" href="http://m.cnki.net/mcnkidown/index.html"><i>手机版</i></a>   <a id="Ecp_header_english" class="ecp_tn-tab" target="_blank" href="http://oversea.cnki.net/"><i>English</i></a>   <!--<a id='Ecp_header_Map' class='ecp_tn-tab' target='_blank' href='http://192.168.107.16/kns/subPage/map.aspx'><i>网站地图</i></a>-->   <a class="ecp_tn-tab" href="http://kns.cnki.net/kns/subPage/map.aspx"><i>网站地图</i></a><a id="Ecp_header_Help" class="ecp_tn-tab" target="_blank" href="http://service.cnki.net/helpcenter/"><i>帮助中心</i></a>  </div> </div> <div class="tn-person-r">  <div id="Ecp_top_login_div2" class="ecp_tn-title ecp_tn-title-login">   <!--登录-->   <div id="Ecp_top_login" style="display: none;">    <a class="ecp_tn-tab" href="javascript:void(0);">     <i>登录<span class="ecp_tn-arrow"></span></i>    </a>   </div>   <!--弹框-->   <div id="Ecp_top_login_layer" class="tn-topmenulist tn-topmenulist-b Ecp_top_login_layer-my" style="display: none;">    <div class="outlogin_layerbox_bylx outlogin_layerbox_bylx_anrrow top_login_layer2-my" node-type="box">     <div>      <a id="Ecp_top_login_closeLayer" class="layerbox_close" href="javascript:void(0);">×</a>     </div>     <div class="layerbox_left">      <div class="ecp_titletips"></div>      <p id="Ecp_errorMsg" class="login_error_tips" style="display:none;"></p>      <ul class="loginformlist">       <li class="ndrelativewrap">        <input id="Ecp_TextBoxUserName" class="styles" name="Ecp_TextBoxUserName" placeholder="请输入用户名/邮箱/手机号" tabindex="1" maxlength="64" type="text">        <a class="register_lnk" href="http://my.cnki.net/Register/CommonRegister.aspx" target="_blank">注册新用户</a>       </li>       <li>        <input id="Ecp_TextBoxPwd" class="styles" name="Ecp_TextBoxPwd" placeholder="请输入密码" tabindex="2" maxlength="20" autocomplete="off" autocapitalize="off" onkeydown="return Ecp_EnterSubmit(event,this,Ecp_Button1,true);" type="password">        <a class="forget_Pwd" href="http://my.cnki.net/mycnki/mycnkiFandPassword.htm" target="_blank">找回密码</a>       </li>       <!--验证码-->       <li id="Ecp_CheckCodeLayer" class="loginform_yzm" style="display:none;">        <input id="Ecp_CheckCode" placeholder="验证码" class="styles" tabindex="3" maxlength="6" autocomplete="off" autocapitalize="off" onkeydown="return Ecp_EnterSubmit(event, this, Ecp_Button1);" type="text">        <img id="Ecp_CheckCodeImg" src="" class="ecp_yzm" alt="看不清？换一张"><a id="Ecp_CheckLink" href="javascript:;" class="reload-code" title="看不清？换一张">看不清换一张</a>       </li>       <li class="ecp_btn_wrap">        <a id="Ecp_Button1" class="ecp_login_btn" href="javascript:void(0);" tabindex="4">登录</a>        <a id="Ecp_Button2" class="ecp_login_btn" href="javascript:void(0);" tabindex="5">IP登录</a>        <label class="rmb_login" title="用户下次访问直接登录系统，为了账户安全，建议您在个人电脑使用此功能">         <input class="auto_checkbox" id="rememberMe" name="rememberMe" autocomplete="off" type="checkbox">         <span>自动登录</span>        </label>       </li>       <li class="sub_wrap_r">        <div class="sub_wrap_r-my">使用合作网站账户登录CNKI：</div>        <a id="Ecp_HyperLinkQQ" href="http://my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=qq&amp;RedirectUrl=http%3a%2f%2fkns.cnki.net%2fKXReader%2fDetail%3fdbcode%3dCJFD">         <img src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/login_qq.gif" alt="使用腾讯QQ账户登录" width="60" height="24">        </a>        <a id="Ecp_HyperLinkWeixin" href="http://my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=weixin&amp;RedirectUrl=http%3a%2f%2fkns.cnki.net%2fKXReader%2fDetail%3fdbcode%3dCJFD">         <img src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/login_weixin.gif" alt="使用微信账户登录" width="60" height="24">        </a>        <a id="Ecp_HyperLink163" href="http://my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=163&amp;RedirectUrl=http%3a%2f%2fkns.cnki.net%2fKXReader%2fDetail%3fdbcode%3dCJFD">         <img src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/login_163.gif" alt="使用网易网账户登录" width="60" height="24">        </a>        <a id="Ecp_HyperLinkSina" href="http://my.cnki.net/ThirdLogin/ThirdLogin.aspx?to=sina&amp;RedirectUrl=http%3a%2f%2fkns.cnki.net%2fKXReader%2fDetail%3fdbcode%3dCJFD">         <img src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/login_sina.gif" alt="使用新浪网账户登录" width="60" height="24">        </a>        </li>      </ul>      </div>    </div>   </div>   <!--退出-->   <div id="Ecp_top_logout" class="ecp_tn-title" style="">    <span class="tn-greeting">欢迎</span>    <a id="Ecp_top_logout_showLayer" class="ecp_tn-tab ecp_tn-tab-user" href="javascript:void(0);">     <i><em title="" id="Ecp_loginShowName">北京师范大学图书馆</em><span class="ecp_tn-arrow"></span></i>    </a>    <div id="Ecp_top_logout_layer" class="tn-topmenulist tn-topmenulist-a tn-topmenulist-a-user" style="display:none;">     <ul class="tn-text-list">      <li><a id="Ecp_MycnkiLink" href="http://my.cnki.net/" title="我的CNKI" target="_blank">我的CNKI</a></li>      <li><a id="Ecp_top_logoutClick" href="javascript:void(0);" title="退出">退出</a></li>     </ul>    </div>   </div>  </div>  <!--其他-->  <div class="ecp_tn-title" id="Ecp_header_Register">   <a class="ecp_tn-tab" target="_blank" href="http://my.cnki.net/elibregister/commonRegister.aspx"><i>注册</i></a>  </div>  <span class="mycnki topItem" id="spanmycnki"><a id="link_mycnki" href="javascript:void(0);" onclick="setmycnkiclass()">我的记录<i class="ecp_tn-arrow"></i></a><div id="pop_mycnki" class="topItemPop mycnkipop" style="display:none;"><a class="close" href="javascript:void(0)" onclick="$(this).parent().hide()">x</a><div class="klogin_fr"><ul class="mlist"><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">进入 <b>我的记录</b> &gt;&gt;</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=keyWord" target="_parent">我的检索词</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=recArticle" target="_parent">我的推荐</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=downLoad" target="_parent">我的下载</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=view" target="_parent">我的浏览</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=read" target="_parent">我的阅读</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=share" target="_parent">我的分享</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=export" target="_parent">我的导出</a></li><li><a href="http://kns.cnki.net/KMycnki/Mycnki/index?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!&amp;turnId=analysis" target="_parent">我的分析</a></li> <li><a href="http://kns.cnki.net/knsdelivery/mycnki.aspx?uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_parent">我的关注</a></li></ul></div><div class="klogin_fl"><ul class="mlist"><li class="prompt"><span>您好，登录可以查看更多信息</span></li></ul></div></div></span><div class="ecp_tn-title" id="Ecp_header_ChargeCenter">   <a class="ecp_tn-tab" target="_blank" href="http://my.cnki.net/CNKIRecharging/"><i>充值中心</i></a>  </div>  <div class="ecp_tn-title" id="Ecp_header_BuyCard">   <a class="ecp_tn-tab" target="_blank" href="http://vipcard.cnki.net/ec/skwd/skwd.htm"><i>购买知网卡</i></a>  </div> </div> </div> <input id="Ecp_LoginUserName" type="hidden"> <input id="Ecp_LoginUid" type="hidden"> <p style="display:none" id="Ecp_ReturnMsg"></p> <div class="Logo"><a href="http://www.cnki.net/"><img src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/logo.gif" alt="中国知网"><img class="logohome" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/home.gif"></a></div></div> <!--海外--> <div id="Ecp_top_login_oversea" class="login-modal" style="display:none;"> <div class="login-l pull-left" style="width:483px;">  <div class="ecpover-mask"></div>  <div class="ecpover-modal">   <div class="ecpover-modal-hd">提示<a onclick="Ecp_LoginResult();" class="close"></a></div>   <div id="ecpover_select" class="ecpover-modal-bd">    <p>您的IP已超出中国大陆的许可使用范围！<br>您今年还可启用<i id="ecp_over_i">j</i>次应急服务，每次<i>7</i>天。<br><i>您确定要启用吗？</i></p>    <div class="btns"><a onclick="Ecp_LoginResult();" class="btn btn-cancel">取消</a><a id="ecpover_open" class="btn">启用</a></div>    <div class="ecpover-tip">中国大陆地区以外的用户，请访问<a href="http://oversea.cnki.net/" target="_blank"><i> oversea.cnki.net</i> &gt;</a></div>   </div>   <div id="ecpover_close" class="ecpover-modal-bd" style="display:none;">    <p id="ecpover_p_close">您的IP已超出中国大陆的许可使用范围！<br>您今年的应急服务次数已耗尽！<i>暂无法登录。</i></p>    <div class="btns"><a onclick="Ecp_LoginResult();" class="btn">关闭</a></div>    <div class="ecpover-tip">中国大陆地区以外的用户，请访问<a href="http://oversea.cnki.net/" target="_blank"><i> oversea.cnki.net</i> &gt;</a></div>   </div>  </div> </div> </div> <!--海外--> <script>var Ecp_topLoginUrl = 'http://login.cnki.net/TopLogin/'; var Ecp_PageStyle = 'header'; var Ecp_CookieDomain = '.cnki.net'; var Ecp_isAuotIpLogin = '1'</script>
+<div id="headerBox" class="header">
+</div>
+
+
+
+    
+
+<link href="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/detail.css" rel="stylesheet">
+
+
+<div class="btn-link" style="display: none"><a target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=CHWZ201701006&amp;v=MDYzMzR6cXFCdEdGckNVUkxLZlplWm1GaUhtVmIvUEppWGNkTEc0SDliTXJvOUZZb1FLREg4NHZSNFQ2ajU0TzM=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">知网节</a></div>
+
+    <div class="main">
+        <style type="text/css">
+        /*体验提示*/
+        .main{ margin-bottom: 0; overflow: visible; }
+        .main .free-tip{ line-height: 30px; height: 50px; margin-top: -50px;  margin-right: 3%; font-weight: normal; font-size: 16px; font-family: "Microsoft yahei";  text-align: right; color: #FF8400; }
+        .main .free-tip .icon{ display: inline-block; vertical-align: middle; width: 12px; height: 18px; background: url(/kxreader/Content/images/icon-freeTip.png) no-repeat; }
+        .footer{ background-color: #f9f9f9; }
+        </style>
+        <h6 class="free-tip"><i class="icon"></i>HTML阅读开放试用阶段，欢迎体验！</h6>
+
+        
+
+    <div class="sidebar-a">
+        <!--sidebar start-->
+        <div class="sidenav" style="top: 0px;">
+            <div class="arrow"><span></span></div>
+            <!--sidebar_list start-->
+            <dl class="sidenav-list">
+                    <dt class="tit">目录结构</dt>
+                            <dd class="guide noico">
+                                <p><a href="#99" title="0 引言" class="cur">0 引言</a><i></i></p>
+                            </dd>
+                            <dd class="guide noico">
+                                <p><a href="#112" title="1 数据准备和处理方法" class="">1 数据准备和处理方法</a><i></i></p>
+                            </dd>
+                            <dd class="guide">
+                                <p><a href="#119" title="2 电离层TEC变化特性分析" class="">2 电离层TEC变化特性分析</a><i></i></p>
+                                    <ul class="contentbox">
+                                            <li><a href="#130" title="2.1 半年变化特性分析" class="">2.1 半年变化特性分析</a></li>
+                                            <li><a href="#135" title="2.2 季节变化特性分析">2.2 季节变化特性分析</a></li>
+                                            <li><a href="#140" title="2.3 周日变化特性分析">2.3 周日变化特性分析</a></li>
+                                    </ul>
+                            </dd>
+                            <dd class="guide noico">
+                                <p><a href="#147" title="3 结束语">3 结束语</a><i></i></p>
+                            </dd>
+                            <dd class="guide">
+                                <p><a href="#" title="文内图表">文内图表</a><i></i></p>
+                                    <ul class="contentbox">
+                                            <li><a href="#117" title="图1 太阳活动指数变化图">图1 太阳活动指数变化图</a></li>
+                                            <li><a href="#121" title="表1 5个TEC数据点的地理和地磁位置">表1 5个TEC数据点的地理和地磁位置</a></li>
+                                            <li><a href="#153" title="图2 5个数据点TEC的年变化">图2 5个数据点TEC的年变化</a></li>
+                                            <li><a href="#132" title="图3 2010年/2014年Td和Tn最大值出现的月份分布图">图3 2010年/2014年Td和Tn最大值出现的月份分布图</a></li>
+                                            <li><a href="#134" title="表2 2010/2014年和最大值出现在春秋分季节比例统计表">表2 2010/2014年和最大值出现在春秋分季节比例统计表</a></li>
+                                            <li><a href="#138" title="图4 2010年/2014年白天和夜间TEC夏冬季比值分布图">图4 2010年/2014年白天和夜间TEC夏冬季比值分布图</a></li>
+                                            <li><a href="#142" title="图5 TEC自相关统计图">图5 TEC自相关统计图</a></li>
+                                            <li><a href="#145" title="图6 全球范围内电离层TEC周日变化">图6 全球范围内电离层TEC周日变化</a></li>
+                                    </ul>
+                            </dd>
+                                  <dd class="guide noico">
+                                    <h6>
+                                           <p><a href="#a_bibliography">参考文献</a> </p>                                        
+                                    </h6>
+                             </dd>
+
+            </dl>
+        </div>
+        <!--sidebar end-->
+
+
+            &nbsp;
+            <!--此处有一空格符 勿删-->
+    </div>
+
+                <div class="sidebar-b three-collumn">
+            <div class="refer" style="right: 0px; width: 278px; top: 0px;">
+                <div class="arrow" title="参考文献"><span></span></div>
+                <div class="js-scrollbox">
+                    
+                    <div class="subbox active" style="height: 701px;">
+                        <h4>
+                            <span class="tit">参考文献</span>
+                            <a class="close" href="javascript:void(0)">x</a>
+                        </h4>
+                        <div class="side-scroller" style="margin-top: 0px;">
+                            <ul class="refer-list">
+                                <li class="">
+
+
+                                    <a id="bibliography_1" title="GORNEY D J.Solar cycle effects on the near-Earth space environment[J].Reviews of Geophysics, 1990, 28 (3) :315-336." target="_blank" href="http://scholar.cnki.net/result.aspx?q=Solar%20cycle%20effects%20on%20the%20near-Earth%20space%20environment">
+                                        <b>[1]</b>GORNEY D J.Solar cycle effects on the near-Earth space environment[J].Reviews of Geophysics, 1990, 28 (3) :315-336.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_2" title="OLWENDO O J, BAKI P, CILLIERS P J, et al.Comparison of GPS TEC measurements with IRI-2007TEC prediction over the Kenyan region during the descending phase of solar cycle 23[J].Advances in Space Research, 2012, 49 (5) :914-921." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201211867&amp;v=MjY1MDBaZVp1SGlubVVyZkpLVjBTYWhVPU5pZk9mYks3SHRET3JZOUVadW9PQkhvK29CTVQ2VDRQUUgvaXJSZEdlcnFRVE1udw==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[2]</b>OLWENDO O J, BAKI P, 
+CILLIERS P J, et al.Comparison of GPS TEC measurements with IRI-2007TEC 
+prediction over the Kenyan region during the descending phase of solar 
+cycle 23[J].Advances in Space Research, 2012, 49 (5) :914-921.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_3" title="HAZARIKA R, BHUYAN P K.Spatial distribution of TEC across India in 2005:seasonal asymmetries and IRI prediction[J].Advances in Space Research, 2014, 54 (9) :1751-1767." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES14110700216357&amp;v=MTkxNjlWMFNhaFU9TmlmT2ZiSzhIOURNcUk5Rlp1b0pEM2srb0JNVDZUNFBRSC9pclJkR2VycVFUTW53WmVadUhpbm1VcmZKSw==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[3]</b>HAZARIKA R, BHUYAN P 
+K.Spatial distribution of TEC across India in 2005:seasonal asymmetries 
+and IRI prediction[J].Advances in Space Research, 2014, 54 (9) 
+:1751-1767.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_4" title="NAVA B, RADICELLA S M, LEITINGER R, et al.Use of total electron content data to analyze ionosphere electron density gradients[J].Advances in Space Research, 2007, 39 (8) :1292-1297." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201214309&amp;v=MTU3MjRadW9MRDN3d29CTVQ2VDRQUUgvaXJSZEdlcnFRVE1ud1plWnVIaW5tVXJmSktWMFNhaFU9TmlmT2ZiSzdIdERPclk5RQ==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[4]</b>NAVA B, RADICELLA S M,
+ LEITINGER R, et al.Use of total electron content data to analyze 
+ionosphere electron density gradients[J].Advances in Space Research, 
+2007, 39 (8) :1292-1297.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_5" title="NATALI M P, MEZA A.The nighttime anomalies using global IGS VTEC maps[J].Advances in Space Research, 2013, 51 (3) :377-387." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201219802&amp;v=MTE0NzhubVVyZkpLVjBTYWhVPU5pZk9mYks3SHRET3JZOUVadW9HQkh3N29CTVQ2VDRQUUgvaXJSZEdlcnFRVE1ud1plWnVIaQ==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[5]</b>NATALI M P, MEZA A.The nighttime anomalies using global IGS VTEC maps[J].Advances in Space Research, 2013, 51 (3) :377-387.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_6" title="HUANG L, WANG J, JIANG Y, et al.A preliminary study of the single crest phenomenon in total electron content (TEC) in the equatorial anomaly region around 120°E longitude between 1999and 2012[J].Advances in Space Research, 2014, 54 (11) :2200-2207." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES14110700215919&amp;v=MjkzNThadUhpbm1VcmZKS1YwU2FoVT1OaWZPZmJLOEg5RE1xSTlGWnVvS0JYMHdvQk1UNlQ0UFFIL2lyUmRHZXJxUVRNbndaZQ==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[6]</b>HUANG L, WANG J, JIANG
+ Y, et al.A preliminary study of the single crest phenomenon in total 
+electron content (TEC) in the equatorial anomaly region around 120°E 
+longitude between 1999and 2012[J].Advances in Space Research, 2014, 54 
+(11) :2200-2207.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_7" title="AGGARWAL M, JOSHI H P, IYER K N, et al.Day-to-day variability of equatorial anomaly in GPS-TEC during low solar activity period[J].Advances in Space Research, 2012, 49 (12) :1709-1720." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201211772&amp;v=MjY5NjIvaXJSZEdlcnFRVE1ud1plWnVIaW5tVXJmSktWMFNhaFU9TmlmT2ZiSzdIdERPclk5RVp1b09DM3M3b0JNVDZUNFBRSA==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[7]</b>AGGARWAL M, JOSHI H P,
+ IYER K N, et al.Day-to-day variability of equatorial anomaly in GPS-TEC
+ during low solar activity period[J].Advances in Space Research, 2012, 
+49 (12) :1709-1720.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_8" title="徐振中, 王伟民, 王博, 等.120°E赤道电离异常区电子浓度总含量分析与预测[J].地球物理学报, 2012, 55 (7) :2185-2192." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=DQWX201207004&amp;v=MjQ0NjRSTEtmWmVabUZpSG1WYi9QSVR6Y2RyRzRIOVBNcUk5RllJUUtESDg0dlI0VDZqNTRPM3pxcUJ0R0ZyQ1U=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[8]</b>徐振中, 王伟民, 王博, 等.120°E赤道电离异常区电子浓度总含量分析与预测[J].地球物理学报, 2012, 55 (7) :2185-2192.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_9" title="霍星亮, 袁运斌, 欧吉坤, 等.基于GPS资料研究中国区域电离层TEC的周日变化、半年度及冬季异常现象[J].自然科学进展, 2005, 15 (5) :626-630." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=ZKJZ200505021&amp;v=MDU3MDVMRzRIdFRNcW85SFpZUUtESDg0dlI0VDZqNTRPM3pxcUJ0R0ZyQ1VSTEtmWmVabUZpSG1WYi9QUHliQmQ=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[9]</b>霍星亮, 袁运斌, 欧吉坤, 等.基于GPS资料研究中国区域电离层TEC的周日变化、半年度及冬季异常现象[J].自然科学进展, 2005, 15 (5) :626-630.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_10" title="姚新, 赵必强, 刘立波, 等.北美与东亚中纬地区电离层TEC变化的EOF建模和分析[J].空间科学学报, 2015, 35 (5) :556-565." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=KJKB201505005&amp;v=MjgxNDVMRzRIOVRNcW85RllZUUtESDg0dlI0VDZqNTRPM3pxcUJ0R0ZyQ1VSTEtmWmVabUZpSG1WYi9QTGlmQWI=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[10]</b>姚新, 赵必强, 刘立波, 等.北美与东亚中纬地区电离层TEC变化的EOF建模和分析[J].空间科学学报, 2015, 35 (5) :556-565.
+                                    </a>
+                                </li>
+                                <li>
+
+
+                                    <a id="bibliography_11" title="时爽爽, 黄劲松, 冯建迪, 等.基于IGS的白天和夜间电离层TEC变化特性分析[J].大地测量与地球动力学, 2015, 35 (2) :293-297." target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=DKXB201502028&amp;v=MjMyODFTYlRiTEc0SDlUTXJZOUhiSVFLREg4NHZSNFQ2ajU0TzN6cXFCdEdGckNVUkxLZlplWm1GaUhtVmIvUEk=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                        <b>[11]</b>时爽爽, 黄劲松, 冯建迪, 等.基于IGS的白天和夜间电离层TEC变化特性分析[J].大地测量与地球动力学, 2015, 35 (2) :293-297.
+                                    </a>
+                                </li>
+                            </ul>
+                            <div style="display: none;" class="zqscroller">
+                                <h4 class="">增强材料</h4>
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            &nbsp;
+            <!--此处有一空格符 勿删-->
+        </div>
+
+        
+    <div class="content">
+
+
+
+
+        <!--tips start-->
+        <div class="tips">
+                <a href="http://navi.cnki.net/KNavi/JournalDetail?pcode=CJFD&amp;pykm=CHWZ" target="_blank">导航定位学报</a>
+            
+            2017,01(5),24-30 DOI:10.16547/j.cnki.10-1096.20170106
+        </div>
+        <!--tips end-->
+        <div class="top-title">
+            <h1>
+                太阳活动高低年电离层TEC变化特性分析
+
+            </h1>
+        </div>
+        
+            <h2>
+                    <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=au&amp;skey=%E8%B5%B5%E6%B5%B7%E5%B1%B1&amp;code=34423694&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">赵海山</a>
+                    <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=au&amp;skey=%E6%9D%A8%E5%8A%9B&amp;code=20293944&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">杨力</a>
+                    <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=au&amp;skey=%E5%BE%90%E4%B8%96%E4%BE%9D&amp;code=34420649&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">徐世依</a>
+            </h2>
+                    <h2>
+                    <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=in&amp;skey=%E4%BF%A1%E6%81%AF%E5%B7%A5%E7%A8%8B%E5%A4%A7%E5%AD%A6%E5%AF%BC%E8%88%AA%E4%B8%8E%E7%A9%BA%E5%A4%A9%E7%9B%AE%E6%A0%87%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2&amp;code=0199248&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">信息工程大学导航与空天目标工程学院</a>
+            </h2>
+        <div class="link">
+    <a id="aexport" class="icon icon-output" onclick="window.KXR.DetailHeader.SubTurnExport('http://kns.cnki.net/kns/ViewPage/viewsave.aspx','CJFDTOTAL!CHWZ201701006')" href="javascript:void(0);"><i></i>导出/参考文献</a>
+    <span class="followtop" id="AttentionYes" style="display:none;"><a title="可以去 我的关注 查看更新" class="icon icon-followSuccess" href="" target="mycnkitarget" id="ahasattention"><i></i>已关注</a></span>
+    <span class="followtop" id="AttentionNo">
+        <a id="aguanzhu" title="关注文献" class="icon icon-follow" onclick="common.AttentionServiceParam('2', '', 'CJFDTOTAL','CHWZ201701006', '0');" href="javascript:void(0);"><i></i>关注</a>
+        <div class="popflow" id="popupTips" style="display:none;">
+            <div class="popflowArr"></div>
+            <div class="popflowCot">
+                <div class="hd"><a class="close" onclick="$('#popupTips').hide(); $('#popupmsg').html('')" href="javascript:void(0);">X</a></div>
+                <div class="bd">
+                    <p class="mes" id="popupmsg" name="popupmsg">关注成功！</p>
+                    <p class="des">
+                        加关注后您将方便地在
+                        <a id="amyattention" href="" target="_mycnki">我的关注</a>中得到本文献的被引频次变化的通知！
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </span>
+    <span class="shareBoard" onmouseover="$('#sharedet').show();$('#this').addClass('shareBoardCUR')" onmouseout="$('#sharedet').hide();$('#this').removeClass('shareBoardCUR')">
+        <a class="icon icon-share" href="#"><i></i>分享<em></em></a>
+        <ul class="shareHide" id="sharedet" style="display: none;">
+            <li><a title="分享到新浪微博" class="xl" onclick="" href="javascript:common.ShareAction('xl');"><i></i>新浪微博</a></li>
+            <li><a title="分享到腾讯微博" class="tx" onclick="" href="javascript:common.ShareAction('tx');"><i></i>腾讯微博</a></li>
+            <li><a title="分享到人人网" class="rr" onclick="" href="javascript:common.ShareAction('rr');"><i></i>人人网</a></li>
+            <li><a title="分享到开心网" class="kx" onclick="" href="javascript:common.ShareAction('kx');"><i></i>开心网</a></li>
+            <li><a title="分享到豆瓣网" class="db" onclick="" href="javascript:common.ShareAction('db');"><i></i>豆瓣网</a></li>
+            <li><a title="分享到网易微博" class="wy" onclick="" href="javascript:common.ShareAction('wy');"><i></i>网易微博</a></li>
+        </ul>
+    </span>
+    <a id="ashoucang" title="收藏" class="icon icon-favor" onclick="common.AddFavTitle('')" href="javascript:void(0);"><i></i>收藏</a>
+    <a class="icon icon-print" onclick="window.print();" href="javascript:void(0);"><i></i>打印</a>
+    
+    <!--版本切换 end-->
+</div>
+                            <div class="data" id="a_abstract">
+                <span class="keys">摘<span style="font-family: 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;</span>要：</span>
+                <p>为了进一步研究电离层变化特性受不同太阳活动强度影响的问题, 提出太阳活动高低年对比分析的方法, 
+研究5个特定点的电离层TEC的变化特性;重点对太阳活动高低年的TEC半年变化、季节变化以及周日变化进行分析。结果表明:太阳活动强度影响TEC数值
+变化的同时, 还影响其半年变化和季节变化特性;春秋分季节是出现峰值的高峰期, 
+TEC半年变化强度与太阳活动成正比;太阳活动强度对季节异常现象有一定影响, 太阳活动高年季节变化更显著, 0°N<sup>-</sup>20°N是TEC季节异常的活跃范围;全球TEC峰值呈自东向西周日性运动, 通过2年数据的自相关分析可以明显看出其变化周期为24h, 未受到太阳活动高低年影响。</p>
+            </div>
+                    <div class="data" id="a_keywords">
+                <span class="keys">关键词：</span>
+                <p>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=%E7%94%B5%E7%A6%BB%E5%B1%82TEC&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">电离层TEC;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=%E5%8D%8A%E5%B9%B4%E5%8F%98%E5%8C%96&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">半年变化;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=%E5%AD%A3%E8%8A%82%E5%8F%98%E5%8C%96&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">季节变化;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=%E5%91%A8%E6%97%A5%E5%8F%98%E5%8C%96&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">周日变化;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">相关性分析;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=%E5%A4%AA%E9%98%B3%E6%B4%BB%E5%8A%A8%E9%AB%98%E4%BD%8E%E5%B9%B4&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">太阳活动高低年;</a>
+                </p>
+            </div>
+        <!--brief start-->
+        
+        <div class="brief">
+                        <p><b>作者简介：</b>赵海山 (1991—) , 男, 辽宁阜新人, 硕士生, 研究方向为电离层特性和异常探测。</p>
+                            <p><b>收稿日期：</b>2016-09-13</p>
+
+                        <p><b>基金：</b>地理信息工程国家重点实验室开放基金课题经费支持项目 (SKLJIE2014-Z-2-1) </p>
+        </div>
+        
+            <h1>Analysis ofionospheric TEC variation characteristics in solar activity years</h1>
+                    <h2>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=au&amp;skey=ZHAO%20Haishan&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">ZHAO Haishan</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=au&amp;skey=YANG%20Li&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">YANG Li</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=au&amp;skey=XU%20Shiyi&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">XU Shiyi</a>
+            </h2>
+                    <h2>
+                    <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=in&amp;skey=School%20of%20navigation%20and%20aerospace%20engineering%2C%20Information%20Engineering%20University&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">School of navigation and aerospace engineering, Information Engineering University;</a>
+            </h2>
+                    <div class="data" id="a_abstractEN">
+                <span class="keys">Abstract：</span>
+                <p>In order to further study on the influence of solar 
+activity intensity on ionospheric variation characteristics, the paper 
+proposed the method of comparative analysis on solar activity intensity 
+in the high and low solar activity years, and studied the ionospheric 
+TEC variation characters of 5specific points;mainly annalyzed the TEC 
+semiannual, seasonal and diurnal variations of both high and low 
+ionospheric activity years.Result showed that the intensity of solar 
+activity would affect not only the value variation, but also its 
+semiannual and seasonal variation;the maximum values of TEC would mainly
+ appear in equinox seasons, and the intensity of TEC variation would be 
+proportional to that of solar activity;the TEC seasonal variation would 
+be affected by the intensity of solar activity and more significant in 
+high solar activity years, and the active range usually in 0°N<sup>-</sup>20°N;the
+ change of the global TEC maximum values would occur diurnal from the 
+east to the west, and the data autocorrelation analysis of two years 
+indicated that the variation period would turn out to be 24 h, 
+unaffected by the high or low solar activity years.</p>
+            </div>
+                    <div class="data" id="a_keywordsEN">
+                <span class="keys">Keyword：</span>
+                <p>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=ionospheric%20TEC&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">ionospheric TEC;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=semiannual%20variation&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">semiannual variation;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=seasonal%20variation&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">seasonal variation;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=diurnal%20variation&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">diurnal variation;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=correlation%20analysis&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">correlation analysis;</a>
+                        <a href="http://kns.cnki.net/kcms/detail/knetsearch.aspx?dbcode=CJFD&amp;sfield=kw&amp;skey=high%20and%20low%20solar%20activity%20years&amp;code=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!" target="_blank">high and low solar activity years;</a>
+                </p>
+            </div>
+                    <div class="brief">
+                <p><b>Received：</b> 2016-09-13</p>
+            </div>
+        <!--brief start-->
+        <!--brief end-->
+                        <h3 id="99" name="99" class="anchor-tag">0 引言</h3>
+                        <div class="p1">
+                            <p id="100">电离层是受太阳XUV即X射线和极紫外光 (extreme ultraviolet, EUV) 辐射电离高层大气而形成的, 因此电离层总电子含量 (total electron content, TEC) 的变化很大程度上受到太阳活动的影响<a class="sup" data-title="&lt;a href='http://scholar.cnki.net/result.aspx?q=Solar cycle effects on the near-Earth space environment'  target='_blank'&gt;
+                            
+                                [1]GORNEY D J.Solar cycle effects on the near-Earth space environment[J].Reviews of Geophysics, 1990, 28 (3) :315-336.
+                            
+                        &lt;/a&gt;" href="javascript:void(0);">[1]</a>。除
+此之外电离层还受到地磁场、中性大气成分等条件的影响, 从而表现出丰富的时空变化特性。国内外学者对电离层的时空变化特性做了很多研究, 
+如:文献对电离层TEC的季节变化、月变化和日变化规律进行了研究;文献利用10个印度观测站的数据分析了TEC的空间变化特征;文献则分析了电离层
+TEC的梯度变化特性;文献分析了夜晚电离层TEC的变化规律;文献对赤道电离异常区的TEC时空变化特点进行了分析, 
+文献也做了相关研究;文献对研究了中国区域电离层TEC的半年度变化、季节变化以及周日变化;文献分析了北美与东亚中纬地区电离层TEC变化;文献利用国
+际全球卫星导航系统 (global navigation satellite system, GNSS) 服务 (international 
+GNSS service, IGS) 数据, 分析了白天和夜间电离层TEC变化特性, 通过研究电离层与太阳、地磁活动的相关指数, 
+得到电离层TEC地磁活动指数日均值的相关性较弱, 而与太阳活动指数日均值的相关性较强的结论。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="111">本文通过分析2010至2016年太阳射电流量和太阳黑子数 (sunspot numbers, SSN) 的变化情况, 选择具有代表性的太阳活动高低年进行对比分析, 研究电离层在太阳活动高低年的半年变化、季节变化以及周日变化特性。</p>
+                        </div>
+                        <h3 id="112" name="112" class="anchor-tag">1 数据准备和处理方法</h3>
+                        <div class="p1">
+                            <p id="113">空间环境预报中心 (Space Environment Prediction Center, SEPC) 可以提供采样间隔为1d的太阳活动数据以及地磁活动数据。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="114">欧洲定轨中心 (Center for Orbit 
+Determination in Europe, CODE) 可以提供全球电离层格网数据 (global ionosphere maps, 
+GIM) , CODE GIM将450km高度采样间隔为2h的TEC数据按分辨率的经纬度格网进行储存, 在不同太阳活动强度下, 
+在全球范围内大部分TEC数据精度高于24个TECU (电离层TEC的计算单位为TECU, 1TECU=10/m) , 
+可以满足实验的精度要求。本文太阳活动数据采用SEPC提供的太阳射电流量F10.7和太阳黑子数SSN数据, 
+利用统计分析方法对太阳活动数据时间序列进行分析, 得到电离层活动高低年;本文电离层格网TEC数据采用CODE提供的全球电离层格网数据, 
+利用对比分析方法, 对比太阳活动高年与低年特点, 分析电离层TEC半年变化、季节变化以及周日变化特性。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="115">文献运用全球定位系统 (global positioning 
+system, GPS) 的P码观测数据分析电离层TEC的周日变化规律, 认为TEC受太阳活动影响较大。众多研究表明, 
+TEC半年变化幅度的大小与太阳活动明显相关, 与地磁活动没有明显相关性;因此本文不考虑TEC与地磁活动的相关情况, 
+重点分析太阳活动对TEC的影响。在空间环境预报中心下载2010-01—2016-06衡量太阳活动的参数和太阳黑子数SSN数据, 如图1所示。</p>
+                        </div>
+                        <div class="area_img" id="117">
+                                    <img alt="图1 太阳活动指数变化图" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg" style="width: 379.5px;">
+                                        <p class="img_tit">图1 太阳活动指数变化图  <a>&nbsp;&nbsp;下载原图</a></p>
+                                    <p class="img_tit"></p>
+
+                        </div>
+                        <div class="p1">
+                            <p id="118">从图中可以看出太阳射电流量值与太阳黑子数SSN变化情况相似, 
+在2010—2011年数值最小, 变化幅度最低;而在2014—2015年数值最大, 变化幅度最高。因此可以判定2010年太阳活动较弱, 
+视为太阳活动低年;2014年太阳活动较强, 视为太阳活动高年。</p>
+                        </div>
+                        <h3 id="119" name="119" class="anchor-tag">2 电离层TEC变化特性分析</h3>
+                        <div class="p1">
+                            <p id="120">本文选取5个不同的点作为研究对象, 分析其在在太阳活动高低年电离层TEC的半年变化, 季节变化以及昼夜变化的基本的特征, 5个地点的地磁和地理经纬度如表1所示。</p>
+                        </div>
+                        <div class="area_img" id="121">
+                                        <p class="img_tit">
+                                            表1 5个TEC数据点的地理和地磁位置 &nbsp;&nbsp;
+                                            <a class="table" data-tablename="Detail/GetImg?filename=images/1703op00098_7_12100.jpg&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">下载原表</a>
+                                        </p>
+                                    <img alt="表1 5个TEC数据点的地理和地磁位置" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg_005" style="width: 195px;">
+
+                        </div>
+                        <div class="p1">
+                            <p id="122">选取表1中各数据点2年的CODE GIM格网TEC值分别绘制太阳活动高年 (2014年) 和太阳活动低年 (2010年) 的电离层TEC年变化情况, 详见图2。图中横坐标为年积日, 纵坐标为每天对应的时刻, 分辨率为2h。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="124">从图2中可以明显看出, 太阳活动对电离层TEC值有明显的影响, 
+各个数据点2014年TEC值明显高于2010年TEC值。图2中给出的时间为世界时, 由于所选数据点1和点4位于60°W, 
+因此转换为当地时间需减去4h;数据点3位于30°E, 转换为当地时间应该加上2h;数据点2和点5位于90°E, 转化为当地时需加上6h。因此, 
+发现无论太阳活动的高低, 电离层TEC都表现出了典型的周日变化特征, 夜晚22∶00到次日6∶00的电离层TEC变化较为平缓, 
+TEC值较小;而白天的变化大致是从上午8∶00开始逐渐增加, 直至地方时下午14∶00左右达到最大值, 随后逐渐减小。同时, 
+电离层TEC也呈现出明显的季节变化, 每年出现2个峰值, 分别出现在4、5月和9、10月。从全年TEC变化情况来看, 
+位于夏季的6、7、8月TEC值最低, 其中太阳活动高年的季节变化更为明显。</p>
+                        </div>
+                        <div class="area_img" id="153">
+                                    <img alt="图2 5个数据点TEC的年变化" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg_008" style="width: 426.6px;">
+                                        <p class="img_tit">图2 5个数据点TEC的年变化  <a>&nbsp;&nbsp;下载原图</a></p>
+                                    <p class="img_tit"></p>
+
+                        </div>
+                        <div class="p1">
+                            <p id="129">为了更好地分析电离层TEC在太阳活动高低年的半年变化、季节变化和
+周日性变化, 本文把各个GIM格网点TEC每天8∶00—18∶00时段内的TEC进行平均, 作为TEC的白天均值, 
+并将其他时段TEC值进行平均, 作为TEC夜晚均值;并约定每年3—4月份为北半球的春季, 5—8月份为夏季, 9—10月份为秋季, 
+11—2月份为冬季。取1月份平均值作为冬季值, 取7月份平均值作为夏季值。</p>
+                        </div>
+                        <h4 class="anchor-tag" id="130" name="130">2.1 半年变化特性分析</h4>
+                        <div class="p1">
+                            <p id="131">TEC半年变化是指TEC值在春秋分季节出现极大值。本文以1年的数
+据为基础, 求各格网点1年内最大值, 并确定其所在月份, 然后利用锤投影 (hammer projection) 将其标注在世界地图上, 
+再将世界地图投影到一个椭圆上, 如图3所示。图中横坐标为经度范围, 从左到右为-180°至180°;纵轴为纬度范围, 
+由下到上为-90°至90°。将12个月分别用不同的颜色标记在地图上, 
+用以显示太阳活动高年2014年和太阳活动低年2010年和最大值出现的月份的全球分布。</p>
+                        </div>
+                        <div class="area_img" id="132">
+                                    <img alt="图3 2010年/2014年Td和Tn最大值出现的月份分布图" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg_002" style="width: 360.3px;">
+                                        <p class="img_tit">图3 2010年/2014年Td和Tn最大值出现的月份分布图  <a>&nbsp;&nbsp;下载原图</a></p>
+                                    <p class="img_tit"></p>
+
+                        </div>
+                        <div class="p1">
+                            <p id="133">从图3中可以发现:太阳活动高低年和最大值大部分都出现在春秋分季
+节;太阳活动低年和最大值出现在12月份的比例高于太阳活动高年。为了量化太阳活动高低年半年变化分布特点, 
+现将2010和2014年春秋分季节出现和最大值比例情况用表格的形式体现出来。从表2中可以发现:2014年和最大值出现在春秋分季节的比例分别为
+68.13%和72.12%;明显高于2010年的55.36%和54.68%。同时, 
+2010年和最大值在春分季节出现的比例分别为6.32%和8.94%, 
+分别占和最大值出现在春秋分季节总比例的11.41%和16.35%;而2014年和最大值在春分季节出现的比例分别为51.25%和47.46%, 
+分别占和最大值出现在春秋季总比例的75.22%和65.81%。由此不难发现:太阳活动高年和最大值出现在春秋分季节的概率更大, 
+且春分季节所占比例更大;而太阳活动低年和最大值出现在秋分季节的比例明显高于春分季节。</p>
+                        </div>
+                        <div class="area_img" id="134">
+                                        <p class="img_tit">
+                                            表2 2010/2014年和最大值出现在春秋分季节比例统计表 &nbsp;&nbsp;
+                                            <a class="table" data-tablename="Detail/GetImg?filename=images/1703op00098_7_13400.jpg&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">下载原表</a>
+                                        </p>
+                                    <img alt="表2 2010/2014年和最大值出现在春秋分季节比例统计表" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg_003" style="width: 195px;">
+
+                        </div>
+                        <h4 class="anchor-tag" id="135" name="135">2.2 季节变化特性分析</h4>
+                        <div class="p1">
+                            <p id="136">TEC季节异常是指电离层冬季日间的TEC值高于夏季日间的TEC值<a class="sup" data-title="&lt;a href='/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=ZKJZ200505021&amp;v=MzIzOTFtRmlIbVZiL1BQeWJCZExHNEh0VE1xbzlIWllRS0RIODR2UjRUNmo1NE8zenFxQnRHRnJDVVJMS2ZaZVo=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!'  target='_blank'&gt;
+                            
+                                [9]霍星亮, 袁运斌, 欧吉坤, 等.基于GPS资料研究中国区域电离层TEC的周日变化、半年度及冬季异常现象[J].自然科学进展, 2005, 15 (5) :626-630.
+                            
+                        &lt;/a&gt;" href="javascript:void(0);">[9]</a>。本
+文研究电离层季节变化特性时, 将每天12∶00时刻的数据作为白天值, 将00∶00的数据作为夜间值, 
+并取1月份和7月份对应时刻的平均值作为研究电离层季节变化特性的基本数据。通过研究夏季TEC平均值与冬季TEC平均值的比值, 
+来研究电离层季节变化特性, 若比值小于1, 则说明出现季节异常。图4为2010和2014年白天与夜间TEC夏冬季比值的全球分布图。</p>
+                        </div>
+                        <div class="area_img" id="138">
+                                    <img alt="图4 2010年/2014年白天和夜间TEC夏冬季比值分布图" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg_007" style="width: 360.3px;">
+                                        <p class="img_tit">图4 2010年/2014年白天和夜间TEC夏冬季比值分布图  <a>&nbsp;&nbsp;下载原图</a></p>
+                                    <p class="img_tit"></p>
+
+                        </div>
+                        <div class="p1">
+                            <p id="139">通过对比图4的4幅图像可以发现:无论电离层活动强弱, 
+夏冬季比值在地球北半球纬度0~20°地区普遍小于或接近1, 明显出现季节异常现象。通过对比2010和2014年夏冬季比值情况, 
+可以发现太阳活动强度对TEC季节异常有一定的影响, 太阳活动越强, 低纬度地区TEC季节异常现象越明显。</p>
+                        </div>
+                        <h4 class="anchor-tag" id="140" name="140">2.3 周日变化特性分析</h4>
+                        <div class="p1">
+                            <p id="141">为了更好地分析电离层的周日变化特征, 利用自相关分析方法, 分别对2010和2014年的TEC数据进行自相关分析, 其中选取的数据为每天12个历元, 历元间隔2h, 365d共计4 380个历元。自相关分析结果如图5所示。</p>
+                        </div>
+                        <div class="area_img" id="142">
+                                    <img alt="图5 TEC自相关统计图" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg_004" style="width: 370.2px;">
+                                        <p class="img_tit">图5 TEC自相关统计图  <a>&nbsp;&nbsp;下载原图</a></p>
+                                    <p class="img_tit"></p>
+
+                        </div>
+                        <div class="p1">
+                            <p id="143">由图中可以看出:通过自相关函数计算后, 
+电离层TEC存在明显的周期性, 每隔12个历元就出现一次明显的峰值, 
+而1d的历元数正好也是12个;因此数据说明电离层TEC存在明显的周日变化的特性。通过对比2010和2014年的自相关统计结果可以发现, 
+电离层TEC的周日变化规律并不受到太阳活动高低的影响。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="144">为了更清晰地描述电离层的周日变化特性, 
+本文利用太阳活动指数分布情况, 找到了2010—2016年太阳活动最高和最低的2 d, 分别是:2010-05-19, 
+指数达到最低值69;2014-01-07, 指数达到最高值237。并利用这2d的CODE发布的TEC数据, 
+按照采样间隔6h画出全球电离层分布图。如图6所示。</p>
+                        </div>
+                        <div class="area_img" id="145">
+                                    <img alt="图6 全球范围内电离层TEC周日变化" src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/GetImg_006" style="width: 404.7px;">
+                                        <p class="img_tit">图6 全球范围内电离层TEC周日变化  <a>&nbsp;&nbsp;下载原图</a></p>
+                                    <p class="img_tit"></p>
+
+                        </div>
+                        <div class="p1">
+                            <p id="146">图6 (a) 为2010-05-19全球电离层TEC变化情况, 
+TEC在0~40TECU范围内变化;图6 (b) 为2014-01-07全球电离层TEC变化情况, 
+TEC在0~110TECU范围内变化。从图中可以明显看到:电离层TEC峰值随时间自东向西移动;TEC峰值均分布在纬度-20°至20°范围内, 
+呈现出明显的周日变化特点。通过对比2010和2014年的图像可以发现, 相同时刻电离层TEC峰值所在位置几乎相同, 未受到太阳活动高低的影响。</p>
+                        </div>
+                        <h3 id="147" name="147" class="anchor-tag">3 结束语</h3>
+                        <div class="p1">
+                            <p id="148">利用CODE提供的电离层TEC数据, 在分析TEC普遍变化规律的同时, 通过对比太阳活动高低年的分析结果, 重点研究了TEC在太阳活动高低年的半年变化、季节变化以及周日变化等特性, 得到以下结论:</p>
+                        </div>
+                        <div class="p1">
+                            <p id="149">1) 太阳活动强度不仅对电离层TEC数值大小有强烈的影响, 而且还影响TEC变化特性, 但并未改变其特性。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="150">2) 春秋分季节是出现峰值的高峰期, TEC半年变化强度与太阳活动成正比, 太阳活动高年和最大值出现在春秋分季节的比例达到70%, 其中春分季节比例高于秋分季节, 在太阳活动低年和最大值出现在春秋分季节的比例约为55%, 其中秋分季节比例高于春分季节。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="151">3) 太阳活动强度对季节异常现象有一定影响, 太阳活动高年季节变化更显著, 北纬0至20°是TEC季节异常的活跃范围。</p>
+                        </div>
+                        <div class="p1">
+                            <p id="152">4) 全球TEC峰值呈自东向西周日性运动, 通过2年数据的自相关分析可以明显看出其变化周期为24h, 未受到太阳活动高低年影响。</p>
+                        </div>
+        <!--conten left  end-->
+        <!--增强附件-->
+
+
+        <!--reference start-->
+            <div class="reference anchor-tag" id="a_bibliography">
+                <h3>参考文献</h3>
+                        <p>
+                            <a id="bibliography_1" target="_blank" href="http://scholar.cnki.net/result.aspx?q=Solar%20cycle%20effects%20on%20the%20near-Earth%20space%20environment">
+                                <b>[1]</b>GORNEY D J.Solar cycle effects on the near-Earth space environment[J].Reviews of Geophysics, 1990, 28 (3) :315-336.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_2" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201211867&amp;v=MTY4MjdQUUgvaXJSZEdlcnFRVE1ud1plWnVIaW5tVXJmSktWMFNhaFU9TmlmT2ZiSzdIdERPclk5RVp1b09CSG8rb0JNVDZUNA==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[2]</b>OLWENDO O J, BAKI P, CILLIERS P
+ J, et al.Comparison of GPS TEC measurements with IRI-2007TEC prediction
+ over the Kenyan region during the descending phase of solar cycle 
+23[J].Advances in Space Research, 2012, 49 (5) :914-921.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_3" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES14110700216357&amp;v=MDk5NjFIL2lyUmRHZXJxUVRNbndaZVp1SGlubVVyZkpLVjBTYWhVPU5pZk9mYks4SDlETXFJOUZadW9KRDNrK29CTVQ2VDRQUQ==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[3]</b>HAZARIKA R, BHUYAN P K.Spatial
+ distribution of TEC across India in 2005:seasonal asymmetries and IRI 
+prediction[J].Advances in Space Research, 2014, 54 (9) :1751-1767.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_4" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201214309&amp;v=MDA0OTFFWnVvTEQzd3dvQk1UNlQ0UFFIL2lyUmRHZXJxUVRNbndaZVp1SGlubVVyZkpLVjBTYWhVPU5pZk9mYks3SHRET3JZOQ==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[4]</b>NAVA B, RADICELLA S M, 
+LEITINGER R, et al.Use of total electron content data to analyze 
+ionosphere electron density gradients[J].Advances in Space Research, 
+2007, 39 (8) :1292-1297.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_5" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201219802&amp;v=MDI5OTVPZmJLN0h0RE9yWTlFWnVvR0JIdzdvQk1UNlQ0UFFIL2lyUmRHZXJxUVRNbndaZVp1SGlubVVyZkpLVjBTYWhVPU5pZg==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[5]</b>NATALI M P, MEZA A.The nighttime anomalies using global IGS VTEC maps[J].Advances in Space Research, 2013, 51 (3) :377-387.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_6" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES14110700215919&amp;v=MTE5NDJxUVRNbndaZVp1SGlubVVyZkpLVjBTYWhVPU5pZk9mYks4SDlETXFJOUZadW9LQlgwd29CTVQ2VDRQUUgvaXJSZEdlcg==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[6]</b>HUANG L, WANG J, JIANG Y, et 
+al.A preliminary study of the single crest phenomenon in total electron 
+content (TEC) in the equatorial anomaly region around 120°E longitude 
+between 1999and 2012[J].Advances in Space Research, 2014, 54 (11) 
+:2200-2207.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_7" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SJES&amp;filename=SJES13012201211772&amp;v=MDQ4Mjc9TmlmT2ZiSzdIdERPclk5RVp1b09DM3M3b0JNVDZUNFBRSC9pclJkR2VycVFUTW53WmVadUhpbm1VcmZKS1YwU2FoVQ==&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[7]</b>AGGARWAL M, JOSHI H P, IYER K 
+N, et al.Day-to-day variability of equatorial anomaly in GPS-TEC during 
+low solar activity period[J].Advances in Space Research, 2012, 49 (12) 
+:1709-1720.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_8" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=DQWX201207004&amp;v=MDU0MzZxQnRHRnJDVVJMS2ZaZVptRmlIbVZiL1BJVHpjZHJHNEg5UE1xSTlGWUlRS0RIODR2UjRUNmo1NE8zenE=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[8]</b>徐振中, 王伟民, 王博, 等.120°E赤道电离异常区电子浓度总含量分析与预测[J].地球物理学报, 2012, 55 (7) :2185-2192.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_9" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=ZKJZ200505021&amp;v=MzIzOTFtRmlIbVZiL1BQeWJCZExHNEh0VE1xbzlIWllRS0RIODR2UjRUNmo1NE8zenFxQnRHRnJDVVJMS2ZaZVo=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[9]</b>霍星亮, 袁运斌, 欧吉坤, 等.基于GPS资料研究中国区域电离层TEC的周日变化、半年度及冬季异常现象[J].自然科学进展, 2005, 15 (5) :626-630.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_10" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=KJKB201505005&amp;v=MTQ2MDR2UjRUNmo1NE8zenFxQnRHRnJDVVJMS2ZaZVptRmlIbVZiL1BMaWZBYkxHNEg5VE1xbzlGWVlRS0RIODQ=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[10]</b>姚新, 赵必强, 刘立波, 等.北美与东亚中纬地区电离层TEC变化的EOF建模和分析[J].空间科学学报, 2015, 35 (5) :556-565.
+                            </a>
+                        </p>
+                        <p>
+                            <a id="bibliography_11" target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=DKXB201502028&amp;v=MDM5MDJiVGJMRzRIOVRNclk5SGJJUUtESDg0dlI0VDZqNTRPM3pxcUJ0R0ZyQ1VSTEtmWmVabUZpSG1WYi9QSVM=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">
+                                <b>[11]</b>时爽爽, 黄劲松, 冯建迪, 等.基于IGS的白天和夜间电离层TEC变化特性分析[J].大地测量与地球动力学, 2015, 35 (2) :293-297.
+                            </a>
+                        </p>
+            </div>
+        <!--reference end-->
+        <!--footnote start-->
+        <!--footnote end-->
+
+
+
+    </div>
+
+       <input id="fileid" value="CHWZ201701006" type="hidden">
+    </div>
+
+
+
+<div class="btn-link" style="display: none"><a target="_blank" href="http://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&amp;filename=CHWZ201701006&amp;v=MDYzMzR6cXFCdEdGckNVUkxLZlplWm1GaUhtVmIvUEppWGNkTEc0SDliTXJvOUZZb1FLREg4NHZSNFQ2ajU0TzM=&amp;uid=WEEvREcwSlJHSldRa1FhcEE0RVZxbjV6WGcxUkU4RDVUbW1XQXVVWGx3Yz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4ggI8Fm4gTkoUKaID8j8gFw!!">知网节</a></div>
+<div class="popflow" id="popupTips" style="display: none;">
+    <div class="popflowArr"></div>
+    <div class="popflowCot">
+        <div class="hd"><a href="javascript:void(0);" onclick="$('#popupTips').hide();$('#popupmsg').html('')" class="close">X</a></div>
+        <div class="bd">
+            <p class="mes" id="popupmsg" name="popupmsg"></p>
+            <p class="des">
+                加关注后您将方便地在 <a target="_mycnki" href="http://kns.cnki.net/knsdelivery/mycnki.aspx?uid=&amp;type=2">我的关注
+              </a>中得到本文献的被引频次变化的通知！
+           
+            </p>
+        </div>
+        
+    </div>
+</div>
+<input id="myexport" value="http://kns.cnki.net" type="hidden">
+<input id="myhasattention" value="http://kns.cnki.net/knsdelivery/mycnki.aspx?uid=''&amp;type=2" type="hidden">
+
+<div class="link" id="GLSearch" style="display: none;">
+    <i class="icon-trangle"></i>
+    <div class="inner">
+        <a class="icon" id="copytext">复制</a><a class="icon" target="_blank" onclick="searchCRFD(this)">工具书搜索</a>
+    </div>
+</div>
+ 
+    
+    
+    <input id="hidVirtualPath" name="hidVirtualPath" value="/kxreader" type="hidden">
+    <script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/jqueryval.js"></script>
+
+    <script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/clipboard.js"></script>
+
+    <script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/detail.js"></script><script src="%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--XML%E5%85%A8%E6%96%87%E9%98%85%E8%AF%BB--%E4%B8%AD%E5%9B%BD%E7%9F%A5%E7%BD%91_files/addattention.txt" charset="utf-8"></script>
+
+
+    
+    <div id="footerBox" class="footer"><style type="text/css">
+	ul, li { list-style:none; }
+
+	/*---footer---*/
+	#klogin_footer { clear:both; padding-top:30px; }
+	#klogin_footer .botNav {width:1000px;height:24px;margin:0 auto;background-color:#2f8bd6;text-align:center;margin-top:8px;}
+	#klogin_footer .botNav a {font-size:12px;color:#fff !important;line-height:24px;margin:0 10px;}
+	#klogin_footer .botNav a:hover {color:#CFE3F6 !important;}
+    #klogin_footer .botNav:after {clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;}
+	
+	#klogin_footer #bottom {clear:both;background: url(http://kns.cnki.net/kns/images/gb/bottom.jpg) repeat-x; padding:10px 0; margin-top:5px;  }
+	#klogin_footer .botbox { width:994px; margin:0px auto; line-height:22px;overflow:hidden;}
+	#klogin_footer .botbox a {color:#666;}
+	#klogin_footer .botbox a:hover {color:#FF6600;}
+	#klogin_footer .leftinside { width:600px; float:left; color:#666; padding-top:20px;}
+	#klogin_footer .leftinside li { float:left;width:200px;}
+	#klogin_footer .leftinside b { display:block; }
+	#klogin_footer .rigfooter { float:right; width:330px; height:150px; padding:58px 0px 0px 20px; background: url(http://kns.cnki.net/kns/images/gb/footerbg.gif) no-repeat 0px 0px; }
+
+	#klogin_footer .logo-xl, .logo-tx, .logo-rr, .logo-kx, .logo-wy, .logo-yx { display:inline-block; margin-right:5px; width:16px; height:16px; vertical-align:middle; background:url(http://kns.cnki.net/kns/images/gb/i-logothi.png) no-repeat scroll 0 0 transparent; }
+	#klogin_footer .logo-tx { background-position:0 -32px; }
+	#klogin_footer .logo-rr { background-position:0 -64px; }
+	#klogin_footer .logo-kx { background-position:0 -80px; }
+	#klogin_footer .logo-wy { background-position:0 -48px; }
+	#klogin_footer .logo-yx { background-position:0 -96px; }
+
+	/*1200*/
+	.rootw #klogin_footer .botNav,
+	.rootw #klogin_footer .botbox { width:1200px; }
+    .rootw #klogin_footer .botNav a { margin:0 24px; }
+    .rootw #klogin_footer .leftinside { width:760px; padding-left:30px; }
+    .rootw #klogin_footer .leftList li { height:68px; }
+    .rootw #klogin_footer .rigfooter { width:350px;  padding-left:50px;}
+</style>
+
+<div id="klogin_footer">
+	<div class="botNav">
+		<a href="http://cnki.net/gycnki/gycnki.htm" target="_blank">关于我们</a>
+		<a href="http://www.cnki.net/other/gonggao/gongsirongyu.html" target="_blank">CNKI荣誉</a>
+		<a href="http://www.cnki.net/other/gonggao/bqsm.htm" target="_blank">版权公告</a>
+		<a href="http://service.cnki.net/" target="_blank">客服中心</a>
+		<a href="http://help.cnki.net/" target="_blank">在线咨询</a>
+		<!-- <a href="http://kbs.cnki.net/forums/10873/ShowForum.aspx" target="_blank" >用户交流</a> -->
+		<a href="http://help.cnki.net/Live800_1_2.aspx?GroupID=503&amp;PageID=101008&amp;Name=&amp;CookieName=TTKN_OnLine_800" target="_blank">用户建议</a>
+	</div>
+	<div id="bottom">
+		<div class="botbox">
+			<div class="leftinside">
+				<ul>
+					<li style="width:120px;"><b>读者服务</b>
+						<p>
+							<a href="http://vipcard.cnki.net/ec/skwd/skwd.htm" target="_blank">购买知网卡</a><br>
+							<a href="http://my.cnki.net/CNKIRecharging/czzx.html" target="_blank">充值中心</a><br>
+							<a href="http://kns.cnki.net/kns/RedirectPage.aspx?action=&amp;url=&amp;domain=http%3a%2f%2fmy.cnki.net/" target="_blank">我的CNKI</a><br>
+							<a href="http://service.cnki.net/helpcenter/" target="_blank">帮助中心</a>
+						</p>
+					</li>
+					<li style="width:170px;"><b>CNKI常用软件下载</b>
+						<p>
+							<a href="http://cajviewer.cnki.net/" target="_blank">CAJViewer浏览器</a><br>
+							<a href="http://www.cnki.net/software/xzydq.htm#CNKIe-Learning" target="_blank">CNKI数字化学习平台</a><br>
+							<a href="http://mall.cnki.net/Reference/Soft/CNKI%E5%B7%A5%E5%85%B7%E4%B9%A6.rar" target="_blank">工具书桌面检索软件</a>
+						</p>
+					</li>
+					<li style="width:130px;"><b>特色服务</b>
+						<p>
+							<a href="http://wap.cnki.net/touch/web" target="_blank">手机知网</a><br>
+							<a href="http://wuxizazhi.cnki.net/" target="_blank">杂志订阅</a><br>
+							<a href="http://mall.cnki.net/" target="_blank">数字出版物订阅</a><br>
+							<a href="http://ad.cnki.net/index.aspx" target="_blank">广告服务</a>
+						</p>
+					</li>
+					<li style="width:160px;"><b>客服咨询</b>
+						<p>
+							订卡热线：400-819-9993<br>
+							服务热线：400-810-9888<br>
+							在线咨询：<a href="http://help.cnki.net/" target="_blank">help.cnki.net</a><br>
+							邮件咨询：<a href="mailto:help@cnki.net" target="_blank">help@cnki.net</a><br>
+							客服微博：<span style="margin-top:-16px;"><a class="logo-xl" title="客服新浪微博" href="http://e.weibo.com/u/3059308095" target="_blank"></a><a class="logo-tx" title="客服腾讯微博" href="http://t.qq.com/CNKI_kefu" target="_blank"></a></span>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div id="footerrightdiv" name="footerrightdiv" class="rigfooter">			
+				京ICP证040431号
+                <a href="http://piccache.cnki.net/index/images/gb/271.jpg" target="_blank">网络出版服务许可证 (总)网出证(京)字第271号</a><br> 
+				<a target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202005012100021">经营性网站备案信息</a>  京公网安备11010802020460号<br>
+				© 1998-2017中国知网(CNKI)<br> 《中国学术期刊(光盘版)》电子杂志社有限公司<br>
+				KDN平台基础技术由KBASE 11.0提供.   
+				<!--可信网站图片LOGO安装开始
+                <span id="kx_verify"></span>  <script type="text/javascript"> (function () { var _kxs = document.createElement('script'); _kxs.id = 'kx_script'; _kxs.async = true; _kxs.setAttribute('cid', 'kx_verify'); _kxs.src = ('https:' == document.location.protocol ? 'https://ss.knet.cn' : 'http://rr.knet.cn') + '/static/js/icon3.js?sn=e13111111010043364isll000000&tp=icon3'; _kxs.setAttribute('size', 1); var _kx = document.getElementById('kx_verify'); _kx.parentNode.insertBefore(_kxs, _kx); })();</script>-->
+                <!--可信网站图片LOGO安装结束-->               
+				<div class="clear"></div>                 
+        <label id="uIP">您当前IP：114.255.218.14</label>                
+			</div>
+		</div>
+	</div>
+</div></div>
+<script>
+    if (typeof FlushLogin == 'function') {
+        FlushLogin();
+    }
+    modifyEcpHeader(true);
+</script>
+
+
+
+</body></html>
