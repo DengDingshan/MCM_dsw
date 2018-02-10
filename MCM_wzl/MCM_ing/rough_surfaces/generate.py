@@ -4,16 +4,6 @@ import surface as bs
 
 
 def self_affine(saparams, power_of_two, seed=None):
-    '''
-    Generates a self affine rough surface with periodic boundaries using provided parameters,
-    discretization size and random seed.
-    >>> import brown.parameters as bp
-    >>> import brown.surface as bs
-    >>> saparams = bp.SelfAffineParameters()
-    >>> s = self_affine(saparams, 7, seed=0)
-    >>> bs.rms(s) == saparams.hrms
-    True
-    '''
     np.random.seed(seed)
     lambda_L_over_lambda_0 = 1 if saparams.lambda_L_over_lambda_0 is None else saparams.lambda_L_over_lambda_0
     lambda_L_over_lambda_1 = sys.maxsize if saparams.lambda_L_over_lambda_1 is None else saparams.lambda_L_over_lambda_1
