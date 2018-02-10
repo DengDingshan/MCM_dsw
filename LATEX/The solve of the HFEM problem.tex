@@ -1,0 +1,50 @@
+\documentclass{mcmthesis}
+\mcmsetup{CTeX = true,
+        tcn = 83451, problem = A,
+        sheet = true, titleinsheet = true, keywordsinsheet = true,
+        titlepage = false, abstract = false}
+\usepackage{palatino}
+\usepackage{graphicx}
+\title{The \LaTeX{} Template for MCM Version \MCMversion}
+\author{\small Team \# 83451}
+\date{\today}
+\begin{document}
+
+\begin{abstract}
+
+This is a try of our paper. Mainly test how to insert a beautiful table and a nice picture of our work. In the end, we tried how to show a nice Reference.
+
+\begin{keywords}
+  Try; Table; Picture; Reference
+\end{keywords}
+\end{abstract}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+this is the introduction
+
+%
+% \bibliographystyle{plain}
+% \bibliography{new_t}
+
+\newpage
+\begin{appendices}
+
+  \section{First appendix}
+
+    Here are simulation programmes we used in our model as follow.\\
+
+    \textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input Matlab source:}}
+
+
+  \section{Second appendix}
+
+    some more text \textcolor[rgb]{0.98,0.00,0.00}{\textbf{Input Python source:}}
+
+
+\end{appendices}
+\end{document}
