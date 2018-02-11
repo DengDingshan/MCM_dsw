@@ -12,16 +12,16 @@ class SWLoss:
 		self._Alpha = Alpha/180.*np.pi
 		self._deff = 0
 		self._N = N
-		self._h = 100.
+		self._h = 300.
 		self._Phij = np.arcsin(np.sin(self._Alpha + 0.5*np.pi)*6371./(6371.+self._h))
 		self._Chi = -80.8*self._Ne/self._f**2. 
 		self._Ij = (1+0.037*self._R)*(np.cos(0.881*self._Chi))
-		self._deff = 2*self._h / np.cos(self._Phij)
+		self._deff = 200. / np.cos(self._Phij)
 		self._Lbf = 32.45 + 20.*np.log10(self._f) + 20.*np.log10(self._deff)
 		# print "Lbf ",self._Lbf, np.log(self._f*0.001), np.log(self.deff())
 		self._fH = 0.012333 * self._Phi + 0.892778
 		self._Phij = np.pi / 2. - self._Alpha
-		self._La = 677.2 * self._Ij/(((self._f + self._fH)**2 + 10.2)*np.cos(self._Phij))
+		self._La = 677.2 * self._Ij/(((self._f + self._fH)**1.98 + 10.2)*np.cos(self._Phij))
 		self._Lb = self._La + self._Lbf
 
 	def Lb(self):
