@@ -19,7 +19,6 @@ class SStack():
 		return self._elems.pop()
 
 
-
 def maximum(surface, amap, top, bottom):
 	for i in range(len(surface)-2):
 		for j in range(len(surface)-2):
@@ -39,46 +38,37 @@ def maximum(surface, amap, top, bottom):
 	return 				 
 
 
-
 def clear():
-	global pos, end, dirs, top, bottom, summ
+	global pos, dirs, top, bottom, summ
 	summ = []
-	pos = (1,1); 
-	end = (5,5)
+	pos = (1,1)
 	dirs = [[-1,0],[1,0],[0,1],[0,-1]]
 	top = []; bottom = []
-	return 
-
-
+	return
 
 
 def surface_solver(surface, amap, gather):
-	# if start == end :
-	# 	print (start)
-	# 	return 
-	for pos in gather:
-		if amap[pos[0],pos[1]] == 0:
-			# print pos, "aa"
+	for start in gather:
+		pos = start
+		if amap[start[0],start[1]] == 0:
 			st = SStack()
 			mark (amap, pos)
 			summ.append(pos)
-			st.push ((pos,0))
+			st.push ((start,0))
 			while not st.is_empty():
 				pos, nxt = st.pop()
-				type(nxt)
 				for i in range(nxt, 4):
 					nextp = (pos[0] + dirs[i][0], pos[1] + dirs[i][1])
-					if passable(surface, amap, nextp, pos):
+					if passable(surface, amap, nextp, start, pos):
 						summ.append(nextp)
 						st.push ((pos, i+1))
 						mark (amap, nextp)
 						st.push ((nextp, 0))
-						 
 	print ("No path found.")
 
 
 
-def passable(surface, amap, nextp, pos):
+def passable(surface, amap, nextp, start, pos):
 
 	def in_range(nextp, surface):
 		if 0 <= nextp[0] and len(surface)> nextp[0] and\
@@ -88,13 +78,15 @@ def passable(surface, amap, nextp, pos):
 			return False
 
 	if in_range(nextp, surface):
-		# print nextp
-		if (amap[nextp[0],nextp[1]] == 0):
-			k = surface[nextp[0],nextp[1]]-surface[pos[0],pos[1]]
-			if abs(k)<1e-4:
+		if (amap[nextp[0],nextp[1]] == 0): 
+			k1 = 0; k2 = 0; k3 = 0;
+			k1 = surface[nextp[0],nextp[1]]-surface[pos[0],pos[1]]
+			k2 = surface[nextp[0],nextp[1]]-surface[start[0],start[1]]
+			k3 = abs(start[0] - pos[0]) + abs(start[1] - pos[1])
+			if abs(k1) < 0.01 and abs(k2) < 0.01 and k3 < 2:
+				# print start, pos, nextp
 				return True
 	return False
-
 
 
 def mark(amap, pos):
@@ -102,13 +94,12 @@ def mark(amap, pos):
 	return 
 
 
-
 import numpy as np
-surface = np.loadtxt("surface.txt")
-amap = np. zeros((512,512))
+surface = np.loadtxt("surface4.txt")
+amap = np. zeros((1024,1024))
 clear()
 maximum(surface, amap, top, bottom)
-amap = np. zeros((512,512))
+amap = np. zeros((1024,1024))
 surface_solver(surface, amap, top)
 surface_solver(surface, amap, bottom)
 print len(summ)
