@@ -25,6 +25,7 @@ def self_affine(saparams, power_of_two, seed=None):
                 rad = rand_norm_1[i, j] * f**power
             if f > f_1:                    # lo pass --> f_1
                 rad, phase = 0.0, 0.0
+            # print "f = ", f, "rad = ", rad
             A[i, j] = rad * np.cos(phase) + rad * np.sin(phase) * 1j
             i0 = 0 if i == 0 else N - i
             j0 = 0 if j == 0 else N - j
