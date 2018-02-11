@@ -1,3 +1,4 @@
+surface0=importdata('surface_1.2.txt',' ');
 z=[];
 for i=1:512
     for j=1:512
