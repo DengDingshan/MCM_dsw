@@ -82,8 +82,8 @@ def passable(surface, amap, nextp, start, pos):
 			k1 = 0; k2 = 0; k3 = 0;
 			k1 = surface[nextp[0],nextp[1]]-surface[pos[0],pos[1]]
 			k2 = surface[nextp[0],nextp[1]]-surface[start[0],start[1]]
-			k3 = abs(start[0] - pos[0]) + abs(start[1] - pos[1])
-			if abs(k1) < 0.01 and abs(k2) < 0.01 and k3 < 2:
+			# k3 = abs(start[0] - pos[0]) + abs(start[1] - pos[1])
+			if abs(k1) < 0.02 and abs(k2) < 0.02 :
 				# print start, pos, nextp
 				return True
 	return False
@@ -95,12 +95,12 @@ def mark(amap, pos):
 
 
 import numpy as np
-surface = np.loadtxt("surface4.txt")
+surface = np.loadtxt("surface 4.txt")
 amap = np. zeros((1024,1024))
 clear()
 maximum(surface, amap, top, bottom)
 amap = np. zeros((1024,1024))
 surface_solver(surface, amap, top)
 surface_solver(surface, amap, bottom)
-print len(summ)
-print len(top)+len(bottom)
+print float(len(summ))/512./512.
+print float(len(top)+len(bottom))/512./512.

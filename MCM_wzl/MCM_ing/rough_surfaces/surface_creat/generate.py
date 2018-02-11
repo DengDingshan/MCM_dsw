@@ -3,12 +3,12 @@ import numpy as np
 import surface as bs
 
 
-def self_affine(saparams, power_of_two, seed=None):
+def self_affine(num, saparams, power_of_two, seed=None):
     np.random.seed(seed)
     lambda_L_over_lambda_0 = 1 if saparams.lambda_L_over_lambda_0 is None else saparams.lambda_L_over_lambda_0
     lambda_L_over_lambda_1 = sys.maxsize if saparams.lambda_L_over_lambda_1 is None else saparams.lambda_L_over_lambda_1
     N, L = 2**power_of_two, saparams.dimensions[0]
-    power = -(saparams.hurst + 1.0)
+    power = -(saparams.hurst[num] + 1.0)
     f_L = 1.0 / N  # rel frequency
     f_0, f_1 = f_L * lambda_L_over_lambda_0, f_L * lambda_L_over_lambda_1
     A = np.zeros((N, N), dtype=complex)
