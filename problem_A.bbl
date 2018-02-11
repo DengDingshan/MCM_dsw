@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{davies1990ionospheric}
+Kenneth Davies.
+\newblock {\em Ionospheric radio}.
+\newblock Number~31. IET, 1990.
+
+\bibitem{freespacepathloss}
+Ian Poole.
+\newblock Free space path loss: Details, formula, calculator.
+\newblock
+  \url{http://www.radio-electronics.com/info/propagation/path-loss/free-space-formula-equation.php},
+  July 2017.
+
+\bibitem{HF_EM}
+Douglas~C. Smith.
+\newblock High frequency measurements web page; index and technical tidbits.
+\newblock \url{http://www.emcesd.com}, D. C. Smith Consultants, Los Gatos, CA.
+
+\end{thebibliography}
