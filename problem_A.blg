@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: problem_A.aux
+The style file: plain.bst
+Database file #1: bib_83451.bib
+Warning--there's a number but no series in davies1990ionospheric
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            514 strings with 4396 characters,
+and the built_in function-call counts, 675 in all, are:
+= -- 64
+> -- 21
+< -- 1
++ -- 9
+- -- 6
+* -- 28
+:= -- 120
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 26
+empty$ -- 67
+format.name$ -- 6
+if$ -- 145
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 2
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 9
+quote$ -- 0
+skip$ -- 19
+stack$ -- 0
+substring$ -- 15
+swap$ -- 4
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 1
+while$ -- 6
+width$ -- 4
+write$ -- 33
+(There was 1 warning)
