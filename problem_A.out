@@ -3,20 +3,24 @@
 \BOOKMARK [2][-]{subsection.1.2}{Problem Restatement}{section.1}% 3
 \BOOKMARK [1][-]{section.2}{General Assumptions}{}% 4
 \BOOKMARK [1][-]{section.3}{Constants and Notations}{}% 5
-\BOOKMARK [1][-]{section.4}{The High Frequency Electromagnetic Waves}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{The High Frequency Electromagnetic Waves \(HF-EM waves\).}{section.4}% 7
+\BOOKMARK [1][-]{section.4}{High Frequency Electromagnetic Waves}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{High Frequency Electromagnetic Waves \(HF-EM waves\).}{section.4}% 7
 \BOOKMARK [2][-]{subsection.4.2}{HF-EM waves Propagation Model}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{The Free-space Path Loss}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Free-space Path Loss}{section.4}% 9
 \BOOKMARK [1][-]{section.5}{The Ionosphere}{}% 10
 \BOOKMARK [2][-]{subsection.5.1}{The Ionosphere Structure Model}{section.5}% 11
-\BOOKMARK [1][-]{section.6}{The Ocean}{}% 12
-\BOOKMARK [1][-]{section.7}{Multi-hop HFEW propagation model}{}% 13
-\BOOKMARK [1][-]{section.8}{The expansion Applications of the propagation model}{}% 14
-\BOOKMARK [1][-]{section.9}{Ships - Considere for Receivers}{}% 15
-\BOOKMARK [1][-]{section.10}{Conclusion}{}% 16
-\BOOKMARK [2][-]{subsection.10.1}{Strengths}{section.10}% 17
-\BOOKMARK [2][-]{subsection.10.2}{Weaknesses}{section.10}% 18
-\BOOKMARK [2][-]{subsection.10.3}{Possible Modifications}{section.10}% 19
-\BOOKMARK [1][-]{section*.2}{Appendices}{}% 20
-\BOOKMARK [1][-]{Appendix.a.A}{Appendix First appendix}{}% 21
-\BOOKMARK [1][-]{Appendix.a.B}{Appendix Second appendix}{}% 22
+\BOOKMARK [2][-]{subsection.5.2}{'Skip' Model and Ionospheric Absorption Loss}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Maximum Usable Frequency}{section.5}% 13
+\BOOKMARK [1][-]{section.6}{The Ocean}{}% 14
+\BOOKMARK [2][-]{subsection.6.1}{Roughness Analysis Method}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.2}{Inverse Roughness Analysis Method}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.3}{Ground Reflection Loss}{section.6}% 17
+\BOOKMARK [1][-]{section.7}{Multi-hop HFEW propagation model}{}% 18
+\BOOKMARK [1][-]{section.8}{The expansion Applications of the propagation model}{}% 19
+\BOOKMARK [1][-]{section.9}{Ships - Consider for Receivers}{}% 20
+\BOOKMARK [1][-]{section.10}{Conclusion}{}% 21
+\BOOKMARK [2][-]{subsection.10.1}{Strengths}{section.10}% 22
+\BOOKMARK [2][-]{subsection.10.2}{Weaknesses}{section.10}% 23
+\BOOKMARK [2][-]{subsection.10.3}{Possible Modifications}{section.10}% 24
+\BOOKMARK [1][-]{section*.2}{Appendices}{}% 25
+\BOOKMARK [1][-]{Appendix.a.A}{Appendix First appendix}{}% 26

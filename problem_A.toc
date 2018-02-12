@@ -1,22 +1,26 @@
-\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Motivation}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Problem Restatement}{2}{subsection.1.2}
-\contentsline {section}{\numberline {2}General Assumptions}{2}{section.2}
-\contentsline {section}{\numberline {3}Constants and Notations}{2}{section.3}
-\contentsline {section}{\numberline {4}The High Frequency Electromagnetic Waves}{3}{section.4}
-\contentsline {subsection}{\numberline {4.1}The High Frequency Electromagnetic Waves (HF-EM waves).}{3}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}HF-EM waves Propagation Model}{4}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}The Free-space Path Loss}{5}{subsection.4.3}
-\contentsline {section}{\numberline {5}The Ionosphere}{6}{section.5}
-\contentsline {subsection}{\numberline {5.1}The Ionosphere Structure Model}{6}{subsection.5.1}
-\contentsline {section}{\numberline {6}The Ocean}{6}{section.6}
-\contentsline {section}{\numberline {7}Multi-hop HFEW propagation model}{6}{section.7}
-\contentsline {section}{\numberline {8}The expansion Applications of the propagation model}{6}{section.8}
-\contentsline {section}{\numberline {9}Ships - Considere for Receivers}{6}{section.9}
-\contentsline {section}{\numberline {10}Conclusion}{6}{section.10}
-\contentsline {subsection}{\numberline {10.1}Strengths}{6}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Weaknesses}{7}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Possible Modifications}{7}{subsection.10.3}
-\contentsline {section}{Appendices}{9}{section*.2}
-\contentsline {section}{Appendix \numberline {A}First appendix}{9}{Appendix.a.A}
-\contentsline {section}{Appendix \numberline {B}Second appendix}{9}{Appendix.a.B}
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Problem Restatement}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}General Assumptions}{3}{section.2}
+\contentsline {section}{\numberline {3}Constants and Notations}{3}{section.3}
+\contentsline {section}{\numberline {4}High Frequency Electromagnetic Waves}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}High Frequency Electromagnetic Waves (HF-EM waves).}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}HF-EM waves Propagation Model}{5}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Free-space Path Loss}{6}{subsection.4.3}
+\contentsline {section}{\numberline {5}The Ionosphere}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}The Ionosphere Structure Model}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}'Skip' Model and Ionospheric Absorption Loss}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Maximum Usable Frequency}{10}{subsection.5.3}
+\contentsline {section}{\numberline {6}The Ocean}{10}{section.6}
+\contentsline {subsection}{\numberline {6.1}Roughness Analysis Method}{10}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Inverse Roughness Analysis Method}{11}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Ground Reflection Loss}{11}{subsection.6.3}
+\contentsline {section}{\numberline {7}Multi-hop HFEW propagation model}{11}{section.7}
+\contentsline {section}{\numberline {8}The expansion Applications of the propagation model}{11}{section.8}
+\contentsline {section}{\numberline {9}Ships - Consider for Receivers}{11}{section.9}
+\contentsline {section}{\numberline {10}Conclusion}{11}{section.10}
+\contentsline {subsection}{\numberline {10.1}Strengths}{11}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Weaknesses}{11}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Possible Modifications}{12}{subsection.10.3}
+\contentsline {section}{Appendices}{14}{section*.2}
+\contentsline {section}{Appendix \numberline {A}First appendix}{14}{Appendix.a.A}

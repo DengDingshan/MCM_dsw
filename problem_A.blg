@@ -4,45 +4,46 @@ The top-level auxiliary file: problem_A.aux
 The style file: plain.bst
 Database file #1: bib_83451.bib
 Warning--there's a number but no series in davies1990ionospheric
-You've used 3 entries,
+Warning--empty journal in terman1943radio
+You've used 9 entries,
             2118 wiz_defined-function locations,
-            514 strings with 4396 characters,
-and the built_in function-call counts, 675 in all, are:
-= -- 64
-> -- 21
+            557 strings with 5545 characters,
+and the built_in function-call counts, 2578 in all, are:
+= -- 249
+> -- 116
 < -- 1
-+ -- 9
-- -- 6
-* -- 28
-:= -- 120
-add.period$ -- 10
-call.type$ -- 3
-change.case$ -- 11
++ -- 47
+- -- 38
+* -- 172
+:= -- 446
+add.period$ -- 28
+call.type$ -- 9
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 26
-empty$ -- 67
-format.name$ -- 6
-if$ -- 145
+cite$ -- 11
+duplicate$ -- 87
+empty$ -- 213
+format.name$ -- 38
+if$ -- 528
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 22
+int.to.str$ -- 9
+missing$ -- 7
+newline$ -- 48
+num.names$ -- 18
+pop$ -- 54
 preamble$ -- 1
-purify$ -- 9
+purify$ -- 37
 quote$ -- 0
-skip$ -- 19
+skip$ -- 62
 stack$ -- 0
-substring$ -- 15
-swap$ -- 4
+substring$ -- 138
+swap$ -- 9
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 10
-warning$ -- 1
-while$ -- 6
-width$ -- 4
-write$ -- 33
-(There was 1 warning)
+type$ -- 34
+warning$ -- 2
+while$ -- 25
+width$ -- 10
+write$ -- 95
+(There were 2 warnings)
