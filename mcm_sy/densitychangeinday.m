@@ -1,6 +1,6 @@
 % density change in year
 clc;close all;clear;
-densitychangeindays=importdata('100kmdensitychangeinday.csv',',',1);
+densitychangeindays=importdata('200kmdensitychangeinday.csv',',',1);
 densitychangeindays=densitychangeindays.data;
 densitychangeindays=densitychangeindays(1:25,1:end);
 hour=densitychangeindays(1:end,5);
@@ -16,12 +16,29 @@ for i=1:25
 end
 figure(1)
 hold on
-scatter(hour,density)
-[P,res] = polyfit(hour,density,3);
-hour2=0:0.1:24;
-daychange2=polyval(P,hour2);
-plot(hour2,daychange2,'r')
+hour=hour(1:end-1,1);
+density=density(1:end-1,1);
+hour1=zeros(24,1);
+density1=zeros(24,1);
+for i=18:24
+    hour1(i-17,1)=hour(i,1);
+    density1(i-17,1)=density(i,1);
+end
+for i=1:17
+    hour1(i+7,1)=hour(i,1);
+    density1(i+7,1)=density(i,1);
+end
+scatter(hour1,density1,'*k')
+plot(hour1,density1,'b')
+xlabel('hour');
+ylabel('Ne(m^-3)');
+title('electronic number density change in one day(F2)');
+
+
+fc=9*((density).^(1/2))/(10^6);
+seta=pi/6;
+MUF=fc/cos(seta);
+%plot(hour,MUF)
+
 hold off
-n=res.normr;
-y=sum((density-mean(density)).^2);
-R2=1.0-((n^2)/y);
+
