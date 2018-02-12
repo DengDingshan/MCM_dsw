@@ -42,5 +42,5 @@ for i in range(12):
             j = k*512+g
             visible[i,j] = output
     figure(1)
-    mlt.hist(visible,bin=100)
+    mlt.hist(visible([i,:],bin=100)
 #print(visible)
