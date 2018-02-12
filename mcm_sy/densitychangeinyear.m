@@ -24,8 +24,8 @@ hold off
 n=res.normr;
 y=sum((monthchange-mean(monthchange)).^2);
 R2=1.0-((n^2)/y);
-%figure(2)
+figure(2)
 fc=9*((monthchange).^(1/2))/(10^6);
 seta=pi/6;
 MUF=fc/cos(seta);
-%plot(month,MUF)
+plot(month,MUF)

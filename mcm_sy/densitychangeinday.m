@@ -33,12 +33,12 @@ plot(hour1,density1,'b')
 xlabel('hour');
 ylabel('Ne(m^-3)');
 title('electronic number density change in one day(F2)');
+figure(2)
 
-
-fc=9*((density).^(1/2))/(10^6);
+fc=9*((density1).^(1/2))/(10^6);
 seta=pi/6;
 MUF=fc/cos(seta);
-%plot(hour,MUF)
+plot(hour1,MUF)
 
 hold off
 
