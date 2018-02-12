@@ -6,21 +6,24 @@
 \BOOKMARK [1][-]{section.4}{High Frequency Electromagnetic Waves}{}% 6
 \BOOKMARK [2][-]{subsection.4.1}{High Frequency Electromagnetic Waves \(HF-EM waves\).}{section.4}% 7
 \BOOKMARK [2][-]{subsection.4.2}{HF-EM waves Propagation Model}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{Free-space Path Loss}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{The Ionosphere}{}% 10
-\BOOKMARK [2][-]{subsection.5.1}{The Ionosphere Structure Model}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.2}{'Skip' Model and Ionospheric Absorption Loss}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.3}{Maximum Usable Frequency}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{The Ocean}{}% 14
-\BOOKMARK [2][-]{subsection.6.1}{Roughness Analysis Method}{section.6}% 15
-\BOOKMARK [2][-]{subsection.6.2}{Inverse Roughness Analysis Creation Method}{section.6}% 16
-\BOOKMARK [2][-]{subsection.6.3}{Ground Reflection Loss}{section.6}% 17
-\BOOKMARK [1][-]{section.7}{Multi-hop HFEW propagation model}{}% 18
-\BOOKMARK [1][-]{section.8}{The expansion Applications of the propagation model}{}% 19
-\BOOKMARK [1][-]{section.9}{Ships - Consider for Receivers}{}% 20
-\BOOKMARK [1][-]{section.10}{Conclusion}{}% 21
-\BOOKMARK [2][-]{subsection.10.1}{Strengths}{section.10}% 22
-\BOOKMARK [2][-]{subsection.10.2}{Weaknesses}{section.10}% 23
-\BOOKMARK [2][-]{subsection.10.3}{Possible Modifications}{section.10}% 24
-\BOOKMARK [1][-]{section*.2}{Appendices}{}% 25
-\BOOKMARK [1][-]{Appendix.a.A}{Appendix Appendices I}{}% 26
+\BOOKMARK [2][-]{subsection.4.3}{Signal-to-noise Ratio}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Free-space Path Loss}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{The Ionosphere}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{The Ionosphere Structure Model}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{'Skip' Model and Ionospheric Absorption Loss}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{Maximum Usable Frequency}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{The Ocean}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{Roughness Analysis Method}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.2}{Inverse Roughness Analysis Creation Method}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.3}{Ground Reflection Loss}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Multi-hop HFEW Propagation Model}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{Single-hop + Ocean Model}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Multi-hop Propagation Model}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.3}{The Extension of the Propagation Model}{section.7}% 22
+\BOOKMARK [1][-]{section.8}{Ships - Consider for Receivers}{}% 23
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 24
+\BOOKMARK [2][-]{subsection.9.1}{Strengths}{section.9}% 25
+\BOOKMARK [2][-]{subsection.9.2}{Weaknesses}{section.9}% 26
+\BOOKMARK [2][-]{subsection.9.3}{Possible Modifications}{section.9}% 27
+\BOOKMARK [1][-]{section*.2}{Appendices}{}% 28
+\BOOKMARK [1][-]{Appendix.a.A}{Appendix Appendices I}{}% 29

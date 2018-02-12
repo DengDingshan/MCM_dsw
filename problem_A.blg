@@ -3,49 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: problem_A.aux
 The style file: plain.bst
 Database file #1: bib_83451.bib
-Warning--entry type for "hainan" isn't style-file defined
---line 11 of file bib_83451.bib
-Warning--there's a number but no series in davies1990ionospheric
-Warning--empty journal in terman1943radio
 You've used 12 entries,
             2118 wiz_defined-function locations,
-            577 strings with 5922 characters,
-and the built_in function-call counts, 3371 in all, are:
-= -- 330
-> -- 137
-< -- 1
-+ -- 56
-- -- 44
-* -- 222
-:= -- 578
+            577 strings with 5932 characters,
+and the built_in function-call counts, 3425 in all, are:
+= -- 334
+> -- 148
+< -- 0
++ -- 60
+- -- 48
+* -- 228
+:= -- 595
 add.period$ -- 36
 call.type$ -- 12
-change.case$ -- 57
+change.case$ -- 58
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 116
-empty$ -- 289
-format.name$ -- 44
-if$ -- 693
+cite$ -- 12
+duplicate$ -- 119
+empty$ -- 286
+format.name$ -- 48
+if$ -- 700
 int.to.chr$ -- 0
 int.to.str$ -- 12
-missing$ -- 9
-newline$ -- 62
+missing$ -- 10
+newline$ -- 63
 num.names$ -- 24
 pop$ -- 67
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 48
 quote$ -- 0
-skip$ -- 83
+skip$ -- 81
 stack$ -- 0
 substring$ -- 203
-swap$ -- 12
-text.length$ -- 1
+swap$ -- 11
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 46
-warning$ -- 2
+type$ -- 44
+warning$ -- 0
 while$ -- 35
 width$ -- 14
-write$ -- 125
-(There were 3 warnings)
+write$ -- 128

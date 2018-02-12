@@ -82,7 +82,7 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
           \hline $L_{totle}$ & The totle energy loss during the propagation & $dB$ \\
           \hline $L_{fspl}$ & The free space path loss & $dB$ \\
           \hline $L_{a}$ & The loss during passing the ionosphere layer & $dB$ \\
-          \hline $L_{gd}$ & The loss during the reflection on the grond & $dB$ \\
+          \hline $L_{grd}$ & The loss during the reflection on the grond & $dB$ \\
           \hline $L_{addition}$ & Additional loss of the signal energy & $dB$ \\
           \hline
 
@@ -123,7 +123,7 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
       The mathematical notations in this Equationa are the same as the habitual use of physical formulas
 
 
-      As we known, \textbf{high frequency (HF)} is the designation for the range of radio frequency EM waves between 3 and 30 megahertz (MHz). The most interesting and important property of this frequency band, is that it can be reflected in the ionosphere layer in the atmosphere — a method which named \emph{sky wave} or \emph{skip}. It is because that the ionized atoms in the atmosphere can interact with HF-EM waves to change its radiating path.\cite{HF_EM}
+      As we known, \textbf{high frequency (HF)} is the designation for the range of radio frequency EM waves between 3 and 30 megahertz (MHz). The most interesting and important property of this frequency band, is that it can be reflected in the ionosphere layer in the atmosphere - a method which named \emph{sky wave} or \emph{skip}. It is because that the ionized atoms in the atmosphere can interact with HF-EM waves to change its radiating path.\cite{HF_EM}
 
       If the sky wave which reflected to the Earth can be reflected again by the ground, a \emph{multi-hop propagation} model would be formed between the ionosphere and the Earth-surface(Figure ~\ref{fig:Multi_hop}). Depending on multi-hop propagation, the scope of the HF communications has been greatly enhenced.
 
@@ -162,7 +162,9 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
       \begin{equation}\label{eq:transmitting}
         E_{r} = E_{g} + G_{g} - L_{totle} + G_{r}
       \end{equation}
-      The characters we used has been discussed at Table \ref{tab:Notations}. Since the units \emph{$dBi$} and \emph{$dBm$} has the same meaning of \emph{$dB$}, we can put them together in one formular. The physics meaning of this Equation is easy to understand. As the \emph{$dB$} represents the logarithmic ratio of two number, the multiplications between the initial energy values and the ratios of gain and attenuation can be simply replaced by addition and subtraction.
+      \emph{The characters we used has been discussed at Table \ref{tab:Notations}.}
+
+    Since the units \emph{$dBi$} and \emph{$dBm$} has the same meaning of \emph{$dB$}, we can put them together in one formular. The physics meaning of this Equation is easy to understand. As the \emph{$dB$} represents the logarithmic ratio of two number, the multiplications between the initial energy values and the ratios of gain and attenuation can be simply replaced by addition and subtraction.
 
     From the requirement, which directly give us the energy intensity($P_{initial} = 100 W $) of the initial EM wave, we can assume that the initial wave energy containing both of the generating energy and the gain. Then, using Equation \ref{eq:dBm_Watt}, we can get this result:
 
@@ -172,14 +174,25 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
 
     As for the loss of the enery $L_{totle}$, we assume the components of it are:
 
-      \begin{equation}
-        L_{totle} = L_{fspl} + L_{a} + L_{gd} + L_{addition}
+      \begin{equation}\label{eq:L_totle}
+        L_{totle} = L_{fspl} + L_{a} + L_{grd} + L_{addition}
       \end{equation}
 
      In this section, we will only study on the free-space path loss ($L_{fspl}$). And the details of other sections of the enery loss will be analyzed later.
 
-  \subsection{Free-space Path Loss}
+  \subsection{Signal-to-noise Ratio}
+     \textbf{Signal-to-noise ratio} is a measure that compares the level of a desired signal to the level of background noise.
 
+     \begin{equation}\label{eq:SNR}
+     \left\{
+     \begin{aligned}
+         SNR &= \frac{P_{\text{signal}}}{P_\text{noise}} \\
+         SNR|_{dB} &= P_{\text{signal}}|_{dB} - P_{\text{noise}}|_{dB}
+     \end{aligned}
+     \right.
+     \end{equation}
+
+  \subsection{Free-space Path Loss}
       The \textbf{free-space path loss(FSPL)}\cite{freespacepathloss} has been discussed for many years. FSPL can be used to calculate the signal strength loss when an EM wave travels over a line of sight path in free space. Based on the \emph{Assumption a} and exsting model of spherical waves in free space \emph{(between the ionosphere and the ground)}, we can draw the result of that:
 
         \begin{equation}\label{eq:FSPL_old}
@@ -387,7 +400,7 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
       L_{grd} = L_{plane} + L_{fresnel} + L_{mirror} + L_{visible}
     \end{equation}
 
-    Or written in the form of multiplication:
+    Or written in the form of multiplication by using Equation \ref{eq:power_dB}:
 
     \begin{equation}\label{eq:grd_R_Multiplication}
       R_{ground} = R_{plane} \times R_{fresnel} \times R_{mirror} \times R_{visible}
@@ -410,8 +423,9 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
           0&\text{$|\nabla \xi| > |Grad_{max}|$}
         \end{cases}
       \end{equation}
+      This equation is generally formed like a $\delta$ function.
 
-    $R_{fresnel}$ reflects the physical fact of reflection loss. We can use Maxwell's Equations \ref{eq:Maxwell_new} and electromagnetic wave propagation boundary conditions to derive this coefficient\cite{hainan}.
+    $R_{fresnel}$ reflects the physical fact of reflection loss. We can use Maxwell's Equations \ref{eq:Maxwell_new} and electromagnetic wave propagation boundary conditions to derive this coefficient\cite{Hainan}.
 
       \begin{equation}\label{eq:R_Fesnel}
         R_{fresnel} = \frac{\varepsilon_s \cos(\theta) - \sqrt{\varepsilon_s - \sin^2(\theta)}}{\varepsilon_s \cos(\theta) + \sqrt{\varepsilon_s - \sin^2(\theta)}}
@@ -428,7 +442,7 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
     \right.
     \end{equation}
     Where:\\
-    the $B_{1th}$ represents the First-order Bessel function.\\
+    $B_{1th}$ represents the First-order Bessel function.\\
 
     As for the $R_{visible}$, we consider the fact that on the turbulent ocean surface, the height of the waves would changed rapidly. Like the situation in Figure ~\ref{fig:visible}, chances are some waves would be shadowed by the latter. So we added a probability coefficient to consider if it would be blocked by waves. Since we generally assume that the height of the ocean wave obey the Gaussian distribution (Equation \ref{eq:Height_Gaussian}), so we have:
 
@@ -442,16 +456,39 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
 
     \begin{figure}[ht]
       \centering
-      \includegraphics[scale=0.3]{Visible}
-      \caption{Some EM waves would be shadowed by the later ocean wave}
+      \includegraphics[scale=0.5]{Visible}
+      \caption{Some EM waves would be shadowed by the following ocean wave}
       \label{fig:visible}
     \end{figure}
 
-\section{Multi-hop HFEW propagation model}
+    Now that we have defined the method of calculating every partial loss in the HF-EM wave propagation path, we will test our model in the next few sections.
+
+\section{Multi-hop HFEW Propagation Model}
+
+    Based on the aforementioned ionospheric propagation model and ocean surface reflection model, we give the final multi-hop HF-EM wave model. The core of the mathematical model is to determine the energy loss by Equation \ref{eq:transmitting} \& \ref{eq:L_totle}. Due to the simplification and assumptions of the model, we think that in addition to the energy losses we have already considered, other losses are not counted. So we will use this formular.
+
+    \begin{equation}\label{eq:L_finaluse}
+    \left\{
+    \begin{aligned}
+        E_{r} &= E_{g} + G_{g} - L_{totle} + G_{r} \\
+        L_{totle} & L_{fspl} + L_{a} + L_{grd} \\
+        E_{g} + G_{g} &= E_{initial}
+    \end{aligned}
+    \right.
+    \end{equation}
+
+    Since we have defined the loss of each part in
+
+    \subsection{Single-hop + Ocean Model}
+
+      For simplify our Single-hop + ocean HF-EM wave transmission is a part of the multi-hop one, which has been shown in Figure ~\ref{fig:Multi_hop}. It includes two free-space path losses from the ground to the ionosphere and two losses by passing through the E-layer. The losses on a turbulent ocean surface also need to be considered.
 
 
+    \subsection{Multi-hop Propagation Model}
 
-\section{The expansion Applications of the propagation model}
+      After we have calculated a single hop, we can naturally extend this approach to multi-hop scenarios. Applying our geometric findings and previous analysis, we draw the result as:
+
+    \subsection{The Extension of the Propagation Model}
 
 \section{Ships - Consider for Receivers}
 
