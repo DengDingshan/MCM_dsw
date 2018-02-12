@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.30)  13 FEB 2018 00:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.30)  13 FEB 2018 05:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -552,43 +552,68 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/palatino.sty
 Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
-(./problem_A.aux)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip75
+\subfigcapskip=\skip76
+\subfigcaptopadj=\dimen155
+\subfigbottomskip=\skip77
+\subfigcapmargin=\dimen156
+\subfiglabelskip=\skip78
+\c@subfigure=\count141
+\c@lofdepth=\count142
+\c@subtable=\count143
+\c@lotdepth=\count144
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip79
+\subfig@bottom=\skip80
+)
+(./problem_A.aux
+
+LaTeX Warning: Label `fig:Multi_hop' multiply defined.
+
+)
 \openout1 = `problem_A.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 15.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 13.
-\c@lstlisting=\count141
- (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(lastpage)             ! on input line 15.
+\c@lstlisting=\count145
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count142
-\scratchdimen=\dimen155
+\scratchcounter=\count146
+\scratchdimen=\dimen157
 \scratchbox=\box36
-\nofMPsegments=\count143
-\nofMParguments=\count144
+\nofMPsegments=\count147
+\nofMParguments=\count148
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count145
-\MPscratchDim=\dimen156
-\MPnumerator=\count146
-\makeMPintoPDFobject=\count147
+\MPscratchCnt=\count149
+\MPscratchDim=\dimen158
+\MPnumerator=\count150
+\makeMPintoPDFobject=\count151
 \everyMPtoPDFconversion=\toks40
 )
 *geometry* driver: auto-detecting
@@ -626,187 +651,307 @@ Package lastpage Info: Please have a look at the pageslts package at
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box37
-Package hyperref Info: Link coloring OFF on input line 13.
+Package hyperref Info: Link coloring OFF on input line 15.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count148
+\c@section@level=\count152
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
 
 (./problem_A.out) (./problem_A.out)
 \@outlinefile=\write4
 \openout4 = `problem_A.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 23.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 23.
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 23.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 35.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 23.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 35.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 35.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+phv on input line 25.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 37.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 25.
- (./problem_A.toc [1])
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 37.
+ (./problem_A.toc [1]
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 28.
+)
 \tf@toc=\write5
 \openout5 = `problem_A.toc'.
 
  [2]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 30.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 43.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 42.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 53.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 103--109
+Underfull \hbox (badness 10000) in paragraph at lines 114--120
 
  []
 
-[4] <Multi_hop.png, id=194, 698.61pt x 365.365pt>
+[4] <Multi_hop.png, id=201, 698.61pt x 365.365pt>
 File: Multi_hop.png Graphic file (type png)
  <use Multi_hop.png>
-Package pdftex.def Info: Multi_hop.png used on input line 132.
+Package pdftex.def Info: Multi_hop.png used on input line 143.
 (pdftex.def)             Requested size: 349.30414pt x 182.68205pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--147
-
- []
-
-[5 <./Multi_hop.png>] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 200--205
+ [5 <./Multi_hop.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--158
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--214
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 211--216
 
  []
 
 
-Overfull \hbox (20.45895pt too wide) in paragraph at lines 226--234
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
+
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 244--248
+Overfull \hbox (20.45895pt too wide) in paragraph at lines 237--245
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--259
 
  []
 
-<PathinIonosphere.png, id=243, 763.85374pt x 429.605pt>
+[8] <PathinIonosphere.png, id=262, 763.85374pt x 429.605pt>
 File: PathinIonosphere.png Graphic file (type png)
 
 <use PathinIonosphere.png>
-Package pdftex.def Info: PathinIonosphere.png used on input line 273.
+Package pdftex.def Info: PathinIonosphere.png used on input line 284.
 (pdftex.def)             Requested size: 381.92593pt x 214.80197pt.
- [8]
-<Multi_hop_angle.png, id=259, 767.86874pt x 507.8975pt>
+ [9 <./PathinIonosphere.png>]
+<Multi_hop_angle.png, id=275, 767.86874pt x 507.8975pt>
 File: Multi_hop_angle.png Graphic file (type png)
 
 <use Multi_hop_angle.png>
-Package pdftex.def Info: Multi_hop_angle.png used on input line 297.
-(pdftex.def)             Requested size: 230.3624pt x 152.37042pt.
+Package pdftex.def Info: Multi_hop_angle.png used on input line 314.
+(pdftex.def)             Requested size: 307.14206pt x 203.1554pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
- []
-
-[9 <./PathinIonosphere.png>] [10 <./Multi_hop_angle.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+[10 <./Multi_hop_angle.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
-
- []
-
-LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 372.
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
-[12]
-Overfull \hbox (12.67812pt too wide) in paragraph at lines 434--435
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+<2d-ocean.png, id=309, 1445.4pt x 724.20563pt>
+File: 2d-ocean.png Graphic file (type png)
+ <use 2d-ocean.png>
+Package pdftex.def Info: 2d-ocean.png used on input line 393.
+(pdftex.def)             Requested size: 433.62335pt x 217.26337pt.
+
+<3d-ocean.png, id=310, 1445.4pt x 724.20563pt>
+File: 3d-ocean.png Graphic file (type png)
+ <use 3d-ocean.png>
+Package pdftex.def Info: 3d-ocean.png used on input line 394.
+(pdftex.def)             Requested size: 433.62335pt x 217.26337pt.
+
+Overfull \hbox (9.56302pt too wide) in paragraph at lines 393--395
+ [][] 
+ []
+
+
+Overfull \hbox (9.56302pt too wide) in paragraph at lines 393--395
+ [][] 
+ []
+
+[12] <waterface.jpg, id=319, 669.2503pt x 447.17062pt>
+File: waterface.jpg Graphic file (type jpg)
+ <use waterface.jpg>
+Package pdftex.def Info: waterface.jpg used on input line 415.
+(pdftex.def)             Requested size: 401.55328pt x 268.30444pt.
+
+[13 <./2d-ocean.png (PNG copy)> <./3d-ocean.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 423--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+[14 <./waterface.jpg>]
+Overfull \hbox (12.67812pt too wide) in paragraph at lines 464--465
 []\T1/ppl/m/n/10.95 The $\OML/cmm/m/it/10.95 R[]$ \T1/ppl/m/n/10.95 we adopt ha
 s been de-rived by \T1/ppl/m/it/10.95 Ament,1953\T1/ppl/m/n/10.95 [[]] and cor-
 rected by \T1/ppl/m/it/10.95 Beard,1961\T1/ppl/m/n/10.95 [[]]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--446
+Underfull \hbox (badness 10000) in paragraph at lines 473--476
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
-
- []
-
-[13] <Visible.png, id=335, 572.1375pt x 311.1625pt>
+[15] <Visible.png, id=363, 572.1375pt x 311.1625pt>
 File: Visible.png Graphic file (type png)
  <use Visible.png>
-Package pdftex.def Info: Visible.png used on input line 459.
+Package pdftex.def Info: Visible.png used on input line 490.
 (pdftex.def)             Requested size: 286.06804pt x 155.58087pt.
- [14 <./Visible.png>] [15] (./problem_A.bbl
+
+<Q1_10MHz.png, id=367, 462.528pt x 346.896pt>
+File: Q1_10MHz.png Graphic file (type png)
+ <use Q1_10MHz.png>
+Package pdftex.def Info: Q1_10MHz.png used on input line 519.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Q1_N2.png, id=368, 462.528pt x 341.8371pt>
+File: Q1_N2.png Graphic file (type png)
+ <use Q1_N2.png>
+Package pdftex.def Info: Q1_N2.png used on input line 530.
+(pdftex.def)             Requested size: 208.13567pt x 153.82526pt.
+
+<Q1_N3.png, id=369, 462.528pt x 341.8371pt>
+File: Q1_N3.png Graphic file (type png)
+ <use Q1_N3.png>
+Package pdftex.def Info: Q1_N3.png used on input line 531.
+(pdftex.def)             Requested size: 208.13567pt x 153.82526pt.
+ [16 <./Visible.png>] <Mon40.png, id=377, 462.528pt x 341.8371pt>
+File: Mon40.png Graphic file (type png)
+ <use Mon40.png>
+Package pdftex.def Info: Mon40.png used on input line 544.
+(pdftex.def)             Requested size: 208.13567pt x 153.82526pt.
+
+<Mon80.png, id=378, 462.528pt x 341.8371pt>
+File: Mon80.png Graphic file (type png)
+ <use Mon80.png>
+Package pdftex.def Info: Mon80.png used on input line 545.
+(pdftex.def)             Requested size: 208.13567pt x 153.82526pt.
+
+<Mon1.png, id=379, 462.528pt x 341.8371pt>
+File: Mon1.png Graphic file (type png)
+ <use Mon1.png>
+Package pdftex.def Info: Mon1.png used on input line 554.
+(pdftex.def)             Requested size: 277.51894pt x 205.10382pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17 <./Q1_10MHz.png>] <Sample.png, id=390, 462.528pt x 346.896pt>
+File: Sample.png Graphic file (type png)
+
+<use Sample.png>
+Package pdftex.def Info: Sample.png used on input line 572.
+(pdftex.def)             Requested size: 277.51894pt x 208.13919pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 581.
+
+[18 <./Q1_N2.png> <./Q1_N3.png> <./Mon40.png> <./Mon80.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 602--603
+
+ []
+
+[19 <./Mon1.png> <./Sample.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
+
+ []
+
+[20]
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 616.
+ [21] [22] (./problem_A.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 50.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
@@ -823,28 +968,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--58
 th-[]loss /
  []
 
-) [16]
+) [23]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 521.
- 
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 654.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 664.
+
+Overfull \hbox (196.94598pt too wide) in paragraph at lines 683--684
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+
+Overfull \hbox (186.14587pt too wide) in paragraph at lines 684--685
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][] 
+ []
+
+[24] [25] <mirro4.png, id=516, 462.528pt x 346.896pt>
+File: mirro4.png Graphic file (type png)
+ <use mirro4.png>
+Package pdftex.def Info: mirro4.png used on input line 726.
+(pdftex.def)             Requested size: 198.88315pt x 149.16237pt.
+
+<mirro8.png, id=517, 462.528pt x 346.896pt>
+File: mirro8.png Graphic file (type png)
+ <use mirro8.png>
+Package pdftex.def Info: mirro8.png used on input line 727.
+(pdftex.def)             Requested size: 198.88315pt x 149.16237pt.
+
+<mirro12.png, id=518, 462.528pt x 346.896pt>
+File: mirro12.png Graphic file (type png)
+ <use mirro12.png>
+Package pdftex.def Info: mirro12.png used on input line 728.
+(pdftex.def)             Requested size: 198.88315pt x 149.16237pt.
+
+<mirro16.png, id=519, 462.528pt x 346.896pt>
+File: mirro16.png Graphic file (type png)
+ <use mirro16.png>
+Package pdftex.def Info: mirro16.png used on input line 729.
+(pdftex.def)             Requested size: 198.88315pt x 149.16237pt.
+
+<mirro20.png, id=520, 462.528pt x 346.896pt>
+File: mirro20.png Graphic file (type png)
+ <use mirro20.png>
+Package pdftex.def Info: mirro20.png used on input line 730.
+(pdftex.def)             Requested size: 198.88315pt x 149.16237pt.
+
+<mirro24.png, id=521, 462.528pt x 346.896pt>
+File: mirro24.png Graphic file (type png)
+ <use mirro24.png>
+Package pdftex.def Info: mirro24.png used on input line 731.
+(pdftex.def)             Requested size: 198.88315pt x 149.16237pt.
+
+
 AED: lastpage setting LastPage
-[17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 534.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 534.
+[26 <./mirro4.png> <./mirro8.png> <./mirro12.png> <./mirro16.png> <./mirro20.pn
+g> <./mirro24.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 740.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 740.
  (./problem_A.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 534.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 534.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 740.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 740.
 Package rerunfilecheck Info: File `problem_A.out' has not changed.
-(rerunfilecheck)             Checksum: 46E395AF715AECEDE889162AB6E4BA84;1976.
+(rerunfilecheck)             Checksum: 102CB11C07D29F99523C08FF8EB3BD25;2102.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 10532 strings out of 492995
- 149362 string characters out of 6132704
- 288925 words of memory out of 5000000
- 13719 multiletter control sequences out of 15000+600000
- 43879 words of font info for 92 fonts, out of 8000000 for 9000
+ 11092 strings out of 492995
+ 156374 string characters out of 6132704
+ 349130 words of memory out of 5000000
+ 14152 multiletter control sequences out of 15000+600000
+ 48323 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,67p,988b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,72p,1193b,2001s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -856,17 +1059,17 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
 xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/t
-exmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dis
-t/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
-/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
-urw/palatino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/pal
-atino/uplbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/
-uplr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a
-.pfb>
-Output written on problem_A.pdf (18 pages, 358664 bytes).
+exmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2017/texmf-dis
+t/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/
+type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/u
+rw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/pala
+tino/uplb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/up
+lbi8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on problem_A.pdf (27 pages, 1379456 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 638 PDF objects out of 1000 (max. 8388607)
+ 548 compressed objects within 6 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,28 +2,30 @@
 \contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Problem Restatement}{3}{subsection.1.2}
 \contentsline {section}{\numberline {2}General Assumptions}{3}{section.2}
-\contentsline {section}{\numberline {3}Constants and Notations}{3}{section.3}
+\contentsline {subsection}{\numberline {2.1}ourwork}{4}{subsection.2.1}
+\contentsline {section}{\numberline {3}Notations}{4}{section.3}
 \contentsline {section}{\numberline {4}High Frequency Electromagnetic Waves}{4}{section.4}
 \contentsline {subsection}{\numberline {4.1}High Frequency Electromagnetic Waves (HF-EM waves).}{4}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}HF-EM waves Propagation Model}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Signal-to-noise Ratio}{6}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.2}HF-EM waves Propagation Model}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Signal-to-noise Ratio}{7}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Free-space Path Loss}{7}{subsection.4.4}
-\contentsline {section}{\numberline {5}The Ionosphere}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}The Ionosphere Structure Model}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}'Skip' Model and Ionospheric Absorption Loss}{8}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Maximum Usable Frequency}{10}{subsection.5.3}
-\contentsline {section}{\numberline {6}The Ocean}{10}{section.6}
-\contentsline {subsection}{\numberline {6.1}Roughness Analysis Method}{10}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Inverse Roughness Analysis Creation Method}{11}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Ground Reflection Loss}{12}{subsection.6.3}
-\contentsline {section}{\numberline {7}Multi-hop HFEW Propagation Model}{14}{section.7}
-\contentsline {subsection}{\numberline {7.1}Single-hop + Ocean Model}{14}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Multi-hop Propagation Model}{15}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}The Extension of the Propagation Model}{15}{subsection.7.3}
-\contentsline {section}{\numberline {8}Ships - Consider for Receivers}{15}{section.8}
-\contentsline {section}{\numberline {9}Conclusion}{15}{section.9}
-\contentsline {subsection}{\numberline {9.1}Strengths}{15}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Weaknesses}{15}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Possible Modifications}{15}{subsection.9.3}
-\contentsline {section}{Appendices}{17}{section*.2}
-\contentsline {section}{Appendix \numberline {A}Appendices I}{17}{Appendix.a.A}
+\contentsline {section}{\numberline {5}The Ionosphere}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}The Ionosphere Structure Model}{8}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}'Skip' Model and Ionospheric Absorption Loss}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Maximum Usable Frequency}{11}{subsection.5.3}
+\contentsline {section}{\numberline {6}The Ocean}{11}{section.6}
+\contentsline {subsection}{\numberline {6.1}Roughness Analysis Method}{11}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Inverse Roughness Analysis Creation Method}{12}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Ground Reflection Loss}{14}{subsection.6.3}
+\contentsline {section}{\numberline {7}Multi-hop HFEW Propagation Model}{16}{section.7}
+\contentsline {subsection}{\numberline {7.1}Single-hop + Ocean Model}{16}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Multi-hop Propagation Model}{16}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}The Extension of the Propagation Model}{17}{subsection.7.3}
+\contentsline {section}{\numberline {8}Consider for Receivers}{17}{section.8}
+\contentsline {section}{\numberline {9}Conclusion}{20}{section.9}
+\contentsline {subsection}{\numberline {9.1}Strengths}{20}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Weaknesses}{20}{subsection.9.2}
+\contentsline {section}{\numberline {10}Synopsis to the \emph {IEEE Communications Magazine}}{21}{section.10}
+\contentsline {section}{Appendices}{24}{section*.2}
+\contentsline {section}{Appendix \numberline {A}The Generation Programmes}{24}{Appendix.a.A}
+\contentsline {section}{Appendix \numberline {B}The Result for Hawaii}{26}{Appendix.a.B}
