@@ -6,6 +6,7 @@
 \usepackage{palatino}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{amsmath}
 \title{ The solve of MCM 2018 problem A }
 \author{\small Team \# 83451}
 \date{\today}
@@ -251,7 +252,7 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
     In general, Since we can obtain the data and basic parameters of the ionosphere. Considering the differences between the four layers \emph{(especially the difference in $N_{e}$)} and its basic physical properties, and from the reference book\cite{davies1990ionospheric,terman1943radio} and Table \ref{tab: the ionosphere layers}, we will adopt this assumption to simplyfy our measurment:
 
     \begin{itemize}
-      \item f. We assume that the main absorbtion of the HF-EM waves lies in the D-layer(about 100km) and reflection in the F2-layer(about 300km).
+      \item Assumption f. We assume that the main absorbtion of the HF-EM waves lies in the D-layer(about 100km) and reflection in the F2-layer(about 300km).
     \end{itemize}
 
     \begin{figure}[ht]
@@ -320,19 +321,19 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
 \section{The Ocean}
 
   \subsection{Roughness Analysis Method}
-    Since we are required to discuss the reflection on a turbulant ocean surface. The turbulent  we need a way to qualify a rough surface like this.
+    Since we are required to discuss the reflection on a turbulent ocean surface. The turbulent  we need a way to qualify a rough surface like this.
 
     In mathmatics, a \textbf{fractal} is an abstract object used to describe and simulate natually occuring objects. With this fractal.From the fractal idea, we can express any two-dimensional or high-dimensional image by concrete expressions. In recent years, \textbf{Fractal Geometry} has become a commonly used method to describe a rough surface\cite{lang2015hydraulic,shibuichi1998super}. Based on this method, we can eliminate the randomness of a rough surface and analyze its uniform characteristics.
 
     We will adapt the multifractal \textbf{detrended fluctuation analysis (MF-DFA)} method from \emph{JW Kantelhardt et al.2002}\cite{kantelhardt2002multifractal}. The detailed steps of this method are not repeated here. Its main idea is that:
 
-    To analyze a rough surface, we usually use the \emph{Fast Fourier Transformation} to sample the surfaces' height. Use the fractal analysis of its parameters: range and variance. Which means we will divide the surface into many sections, and then consider the correlation of the samples in this section we determined. In each section $v$ (from $0$ to $N_s$), with length $s$, we will get an evaluating function $F^2(s,v)$. Using this function in each section, then average over all sections, we will get Equation \ref{eq:F_q} to get the $q$th order fluctuation function:
+    To analyze a rough surface, we usually use the \emph{Fast Fourier Transformation} to sample the surfaces' height. Use the fractal analysis of its parameters: range and variance. Which means we will divide the surface into many sections, and then consider the correlation of the samples in this section we determined. In each section $v$ (from $0$ to $N_s$), with \textbf{length $s$}, we will get an evaluating function $F^2(s,v)$. Using this function in each section, then average over all sections, we will get Equation \ref{eq:F_q} to get the $q$th order fluctuation function:
 
     \begin{equation}\label{eq:F_q}
-      F_q(s) \triangleq {\frac{1}{N_s}\sum_{v=1}^{N_s}[F^2(s,v)]^{q/2}}^{1/q}
+      F_q(s) \triangleq (\frac{1}{N_s}\sum_{v=1}^{N_s}(F^2(s,v))^{q/2})^{1/q}
     \end{equation}
 
-    The function $F_q(s)$ can be used to describe the surface of a part of the relevance. If we sampling the surface for many times, we can always get a statistical conclusion like this:
+    The \textbf{roughness evluating function} $F_q(s)$ can be used to describe the surface of a part of the relevance. If we sampling the surface for many times, we can always get a statistical conclusion like this:
 
     \begin{equation}\label{eq:F_qq}
       F_q(s) \sim s^{H(q) + 1}
@@ -343,9 +344,27 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
 
     This conclusion suggests that the $F_q(s)$ itself is obey this distribution which determined by the $q$ and $H$. So these 2 figures are always used to justify the roughness of a surface.
 
-  \subsection{Inverse Roughness Analysis Method}
+  \subsection{Inverse Roughness Analysis Creation Method}
 
-    If we start from the last step of this MF-DFA method, we may get a rough surface by setting a index $q$, a Hurst Exponent $H$ and a hypothetical waveform function for each little section. So we will get a rough surface following these steps:
+    If we start from the last step of this MF-DFA method, we may get a rough surface by setting a coherent length $s$, a index $q$, a Hurst Exponent $H$ and a hypothetical waveform function for each little section. So we will get a rough surface following these steps:
+
+      \begin{itemize}
+        \item We first need to set up a series of sampling points $n^2$; \\
+        \item Then we will devide these points into several parts which we called \textbf{Coherent Sections}, which has $s^2$ points. Use the parameters ($q$, $H$) to give the roughness evluating function $F_q$ in each section. Since we just get the distribution $s^{H(q) + 1}$, we assume that the points we have in each section will obey $F_q(s)$ distribution; \\
+        \item Then we combine the hypothetical \textbf{turbulent ocean waveform function $F_{wave}$ } and the $F_q(s)$. Let each point samples from this joint probability distribution; \\
+        \item Do an Inverse Fast Fourier Transform for each point;\\
+        \item Then we get the rough surface like the Figure $X$.
+      \end{itemize}
+
+    \emph{Notice: For more details about our generating process of a rough surface, please check the \textbf{appendices I}}.
+    In addition, since $s$, $q$ and $H$ are used to define a surface correlation, there is no exact relationship of them. If we want to estimate a rough surface, then using 3 variables (one of which can be manually adjusted) will certainly yield a more accurate statistic estimation. But if we use this inverse method to create a rough surface, then changing one of them is enough to affect the roughness of a surface. Therefore, in practice, we fixed $s$ and $q$ and only use $H$ to control the roughness of the surface.
+
+    To form a surface by using this process, we also need to define a \textbf{turbulent ocean waveform function $F_{wave}$}. Since we assumed that on a turbulent ocean surface, the wind would not affect its height, then gravity will be the only factor that affects the shape of the surface. For each point on the surface, we assume that the height of it obeys the Gaussian distribution:
+
+    \begin{equation}\label{eq:Height_Gaussian}
+      Height_{points} \sim N(\mu,\sigma^2)
+    \end{equation}
+
 
 
 
@@ -353,6 +372,80 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
 
 
   \subsection{Ground Reflection Loss}
+    Since our task containing studying on the differences between rough and smooth surface, so we construct a general model for discussing the loss of the enery on the ground.
+
+    Taken the Figure $X2$ into account, looking at a ocean surface at night, which points on the sea can be seen by our eyes or a camera len is an intersting question. If we take this physical image as the basis to consider the reflection of electromagnetic waves on the sea surface, we will give our answer:
+
+    \begin{itemize}
+      \item Assumption g. The overall reflection of the sea surface obeys the law of specular reflection (like the Figure ~\ref{fig:Multi_hop} \& ~\ref{fig:Multi_hop_angle}); \\
+      \item Assumption h. Most of the light (EM waves) will be reflected from the \textbf{smooth part} of the rough surface. \\
+    \end{itemize}
+
+    Accepting these Assumptions, we will discuss the loss on the ground by the following Equation:
+
+    \begin{equation}\label{eq:grd_L_totle}
+      L_{grd} = L_{plane} + L_{fresnel} + L_{mirror} + L_{visible}
+    \end{equation}
+
+    Or written in the form of multiplication:
+
+    \begin{equation}\label{eq:grd_R_Multiplication}
+      R_{ground} = R_{plane} \times R_{fresnel} \times R_{mirror} \times R_{visible}
+    \end{equation}
+
+    We will discuss separately the components of the Equation \ref{eq:grd_L_totle} \& \ref{eq:grd_R_Multiplication}.
+
+    $R_{plane}$ explains the \emph{Assumption h}. So we need to define the smooth part on the surface. Since we can get many samples ($n^2$) on the surface, we will have the height field of the surface from these samples. Then we introduce gradient to measure the smoothness of a 2-dimension height field $G(x,y)$:
+
+      \begin{equation}\label{eq:gradient}
+        |\nabla G(x,y)| = \sqrt{(\frac{\partial G(x,y)}{\partial x})^2 + (\frac{\partial G(x,y)}{\partial y})^2}
+      \end{equation}
+
+    The gradient's model of a point shows the maximum height change in the field at this position. So we just need to define a maximum gradient $Grad_{max}$ a point may have to control its reflection:
+
+      \begin{equation}\label{eq:R_plane}
+        R_{plane}(\xi) =
+        \begin{cases}
+          1&\text{$|\nabla \xi| \leq |Grad_{max}|$}\\
+          0&\text{$|\nabla \xi| > |Grad_{max}|$}
+        \end{cases}
+      \end{equation}
+
+    $R_{fresnel}$ reflects the physical fact of reflection loss. We can use Maxwell's Equations \ref{eq:Maxwell_new} and electromagnetic wave propagation boundary conditions to derive this coefficient\cite{hainan}.
+
+      \begin{equation}\label{eq:R_Fesnel}
+        R_{fresnel} = \frac{\varepsilon_s \cos(\theta) - \sqrt{\varepsilon_s - \sin^2(\theta)}}{\varepsilon_s \cos(\theta) + \sqrt{\varepsilon_s - \sin^2(\theta)}}
+      \end{equation}
+
+    The $R_{mirror}$ we adopt has been derived by \emph{Ament,1953}\cite{ament1953toward} and corrected by \emph{Beard,1961}\cite{beard1961coherent}.
+
+    \begin{equation}\label{eq:R_mirror}
+    \left\{
+    \begin{aligned}
+        R_{mirror} &= exp(- P_s) B_{1th}(P_s) \\
+        P_s &= 2 \times (\frac{2\pi h_{rms} \cos(\theta)}{\lambda})
+    \end{aligned}
+    \right.
+    \end{equation}
+    Where:\\
+    the $B_{1th}$ represents the First-order Bessel function.\\
+
+    As for the $R_{visible}$, we consider the fact that on the turbulent ocean surface, the height of the waves would changed rapidly. Like the situation in Figure ~\ref{fig:visible}, chances are some waves would be shadowed by the latter. So we added a probability coefficient to consider if it would be blocked by waves. Since we generally assume that the height of the ocean wave obey the Gaussian distribution (Equation \ref{eq:Height_Gaussian}), so we have:
+
+    \begin{equation}\label{eq:R_visible}
+      R_{visible} = \lim_{N \to \infty} \prod_{i=1}^N \int_{x}^{\infty} \frac{f(h(x),h_0)}{f(h_0)}d\xi
+    \end{equation}
+    Where:\\
+    $f$ is the first- or second-order Gaussian distribution density function.\\
+
+    We believe that the wave height spectra in each of our fractal structures (each single sections) do not obscure the other, whereas the wave spectra in different fractal structures are not correlated. Therefore, each occlusion we calculate here is based on each individual fractal structure, so here we make the two parameters in the second-order Gaussian distribution irrelevant. Which means we can change the second-order Gaussian to a multiplication of 2 first-order one in Equation \ref{eq:R_visible} to calculate the $R_{visible}$.
+
+    \begin{figure}[ht]
+      \centering
+      \includegraphics[scale=0.3]{Visible}
+      \caption{Some EM waves would be shadowed by the later ocean wave}
+      \label{fig:visible}
+    \end{figure}
 
 \section{Multi-hop HFEW propagation model}
 
@@ -390,11 +483,11 @@ On a sunny summer day, everyone wants to enjoy the pleasure of fishing on a yach
 \newpage
 \begin{appendices}
 
-  \section{First appendix}
+  \section{Appendices I}
 
     Here are simulation programmes we used in our model as follow.\\
-
-    \textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input Matlab source:}}
+    To generate a turbulent ocean surface,
+    \textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input Python source:}}
 
 
 \end{appendices}

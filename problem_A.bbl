@@ -1,9 +1,25 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{ament1953toward}
+WS~Ament.
+\newblock Toward a theory of reflection by a rough surface.
+\newblock {\em Proceedings of the IRE}, 41(1):142--146, 1953.
+
+\bibitem{beard1961coherent}
+C~Beard.
+\newblock Coherent and incoherent scattering of microwaves from the ocean.
+\newblock {\em IRE Transactions on antennas and propagation}, 9(5):470--483,
+  1961.
 
 \bibitem{davies1990ionospheric}
 Kenneth Davies.
 \newblock {\em Ionospheric radio}.
 \newblock Number~31. IET, 1990.
+
+\bibitem{hainan}
+Hang Fang.
+\newblock Research on characteristics of maritime wireless radio propagation
+  and channel modeling, 2015.
 
 \bibitem{kantelhardt2002multifractal}
 Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
