@@ -11,11 +11,10 @@ for i in range(len(surface)):
 		file. write (str(surface[i][j])+" ")
 	file. write ("\n")
 
-# for ii in range(5):
-# 	surface = bg.self_affine(surface_params, N_power_of_two)
-# 	file = open("surface"+str(ii)+".txt","w")
+# for ii in range(1):
+# 	surface = bg.self_affine(ii, surface_params, N_power_of_two)
+# 	file = open("surface " + str(ii) + ".txt","w")
 # 	for i in range(len(surface)):
 # 		for j in range(len(surface)):
 # 			file. write (str(surface[i][j])+" ")
-# 		file. write ("\n")
-# open("surface_1.2_jian.txt","w").write(str(surface))
+# 		file. write("\n")
