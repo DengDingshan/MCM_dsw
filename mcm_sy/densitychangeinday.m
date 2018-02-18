@@ -1,4 +1,4 @@
-% density change in year
+% density change in hour
 clc;close all;clear;
 densitychangeindays=importdata('200kmdensitychangeinday.csv',',',1);
 densitychangeindays=densitychangeindays.data;
@@ -15,7 +15,7 @@ for i=1:25
     density(i,1)=mean(densitychangeindays(i,6:end));
 end
 figure(1)
-hold on
+
 hour=hour(1:end-1,1);
 density=density(1:end-1,1);
 hour1=zeros(24,1);
@@ -34,11 +34,8 @@ xlabel('hour');
 ylabel('Ne(m^-3)');
 title('electronic number density change in one day(F2)');
 figure(2)
-
-fc=9*((density1).^(1/2))/(10^6);
-seta=pi/6;
-MUF=fc/cos(seta);
+MUF=zeros(24,1);  
+fc=9*((density1(1:end,1)).^(1/2))/(10^6);
+MUF(1:end,1)=fc/cos(pi/6);
 plot(hour1,MUF)
-
-hold off
 
