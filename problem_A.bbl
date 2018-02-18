@@ -1,9 +1,53 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{ament1953toward}
+WS~Ament.
+\newblock Toward a theory of reflection by a rough surface.
+\newblock {\em Proceedings of the IRE}, 41(1):142--146, 1953.
+
+\bibitem{beard1961coherent}
+C~Beard.
+\newblock Coherent and incoherent scattering of microwaves from the ocean.
+\newblock {\em IRE Transactions on antennas and propagation}, 9(5):470--483,
+  1961.
 
 \bibitem{davies1990ionospheric}
 Kenneth Davies.
 \newblock {\em Ionospheric radio}.
-\newblock Number~31. IET, 1990.
+\newblock IET, 1990.
+
+\bibitem{Hainan}
+Huang Fang.
+\newblock Research on characteristics of maritime wireless radio propagation
+  and channel modeling.
+\newblock Master's thesis, Hainan University, 2015.
+
+\bibitem{dayandyearTECchange}
+ZHAO Haishan, YANG Li, and XU~Shiyi.
+\newblock Analysis ofionospheric tec variation characteristics in solar
+  activity years.
+\newblock {\em Journal of Navigation and Positioning}, 01(17):24--30, March
+  2017.
+
+\bibitem{kantelhardt2002multifractal}
+Jan~W Kantelhardt, Stephan~A Zschiegner, Eva Koscielny-Bunde, Shlomo Havlin,
+  Armin Bunde, and H~Eugene Stanley.
+\newblock Multifractal detrended fluctuation analysis of nonstationary time
+  series.
+\newblock {\em Physica A: Statistical Mechanics and its Applications},
+  316(1-4):87--114, 2002.
+
+\bibitem{lang2015hydraulic}
+PS~Lang, A~Paluszny, and RW~Zimmerman.
+\newblock Hydraulic sealing due to pressure solution contact zone growth in
+  siliciclastic rock fractures.
+\newblock {\em Journal of Geophysical Research: Solid Earth},
+  120(6):4080--4101, 2015.
+
+\bibitem{NASAIonosphere}
+NASA.
+\newblock International reference ionosphere - iri - 2007.
+\newblock \url{https://omniweb.gsfc.nasa.gov/vitmo/iri_vitmo.html}.
 
 \bibitem{freespacepathloss}
 Ian Poole.
@@ -12,9 +56,21 @@ Ian Poole.
   \url{http://www.radio-electronics.com/info/propagation/path-loss/free-space-formula-equation.php},
   July 2017.
 
+\bibitem{shibuichi1998super}
+S~Shibuichi, T~Yamamoto, T~Onda, and K~Tsujii.
+\newblock Super water-and oil-repellent surfaces resulting from fractal
+  structure.
+\newblock {\em Journal of Colloid and Interface Science}, 208(1):287--294,
+  1998.
+
 \bibitem{HF_EM}
 Douglas~C. Smith.
 \newblock High frequency measurements web page; index and technical tidbits.
 \newblock \url{http://www.emcesd.com}, D. C. Smith Consultants, Los Gatos, CA.
+
+\bibitem{terman1943radio}
+Frederick~Emmons Terman.
+\newblock {\em Radio engineers' handbook}.
+\newblock McGraw-Hill Book,, 1943.
 
 \end{thebibliography}
